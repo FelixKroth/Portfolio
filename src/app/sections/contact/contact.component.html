@@ -23,7 +23,7 @@
             placeholder="Your name"
             required
           />
-          <div *ngIf="formControls.name.invalid && formControls.name.touched" class="error-message" data-aos="fade-up" data-aos-duration="500">
+          <div *ngIf="formControls.name.invalid && formControls.name.touched" class="error-message-inputs" data-aos="fade-up" data-aos-duration="500">
             Please fill out this field before sending the message.
           </div>
 
@@ -33,7 +33,7 @@
             placeholder="Your email"
             required
           />
-          <div *ngIf="formControls.email.invalid && formControls.email.touched" class="error-message" data-aos="fade-up" data-aos-duration="500">
+          <div *ngIf="formControls.email.invalid && formControls.email.touched && formControls.button.touched" class="error-message-inputs" data-aos="fade-up" data-aos-duration="500">
             Please fill out this field before sending the message.
           </div>
 
@@ -42,21 +42,21 @@
             placeholder="Your message"
             required
           ></textarea>
-          <div *ngIf="formControls.message.invalid && formControls.message.touched" class="error-message" data-aos="fade-up" data-aos-duration="500">
+          <div *ngIf="formControls.message.invalid && formControls.message.touched && formControls.button.touched" class="error-message-inputs" data-aos="fade-up" data-aos-duration="500">
             Please fill out this field before sending the message.
           </div>
         </div>
 
         <div class="contact-form-button-container">
-          <button type="submit" [disabled]="isFormInvalid">SEND MESSAGE</button>
+          <button formControlName="button" type="submit" [disabled]="contactForm.invalid" [ngClass]="{'disabled': contactForm.invalid}">SEND MESSAGE</button>
         </div>
       </form>
 
       <!-- Success or Error Message -->
-      <div *ngIf="messageSent" class="success-message" data-aos="fade-up" data-aos-duration="1800">
+      <div #successMessage *ngIf="messageSent" class="success-message" data-aos="fade-up" data-aos-duration="1800">
         Your message has been sent successfully!
       </div>
-      <div *ngIf="submissionError && isFormInvalid" class="error-message" data-aos="fade-up" data-aos-duration="1800">
+      <div #errorMessage *ngIf="submissionError && isFormInvalid" class="error-message" data-aos="fade-up" data-aos-duration="1800">
         There was an error sending your message. Please ensure all fields are filled out correctly.
       </div>
     </div>

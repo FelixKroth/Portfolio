@@ -1,6 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import {
+  FormBuilder,
+  FormControl,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -34,11 +40,17 @@ export class ContactComponent {
       // Replace the URL with your backend API endpoint to handle the email sending
       console.log('Sending email with the following data:', formData);
       this.messageSent = true; // Show success message
+      setTimeout(() => {
+        this.messageSent = false;
+      }, 2500);
       this.submissionError = false; // Hide error message if previously shown
       this.contactForm.reset();
     } else {
       this.messageSent = false; // Hide success message if previously shown
       this.submissionError = true; // Show error message
+      setTimeout(() => {
+        this.submissionError = false;
+      }, 2500);
     }
   }
 

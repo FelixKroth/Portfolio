@@ -1,9 +1,22 @@
-.error-message {
+.error-message-inputs {
     width: 80%;
     color: red;
-    margin-top: -12px;
+    margin-top: -8px;
     margin-bottom: 16px;
+    margin-left: 32px;
     font-size: 12px;
+}
+
+.error-message {
+    background-color: #141d2f;
+    color: white;
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    padding: 8px 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .success-message {
@@ -12,7 +25,10 @@
     margin-top: 20px;
     font-size: 16px;
     text-align: center;
-    padding: 8px 32px;
+    padding: 8px 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-content {
@@ -104,6 +120,18 @@
                         // background-position: 0% 50%;
                         background-size: 100% 100%;
                     }
+
+                    > button.disabled {
+                        background-color: #b6e297;
+                        border: 2px solid #b6e297;
+                        background-size: 0% 100%;
+                        cursor: not-allowed;
+                      }
+                    
+                    > button.disabled:hover {
+                        color: #141d2f;
+                        cursor: not-allowed;
+                      }
                 }
             }
         }
