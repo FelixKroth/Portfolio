@@ -1,0 +1,143 @@
+.header-container {
+    background: url("/assets/img/HERO-BG.svg"); 
+    background-repeat: no-repeat;
+    background-position: bottom 75% left 0%;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    > .header-intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 16%;
+        background-color: transparent;
+
+        > button {
+                color: #141d2f;
+                font-weight: 600;
+                padding: 8px 32px;
+                border-radius: 8px;
+                cursor: pointer;
+                margin-top: 32px;
+                background-color: #70e61c;
+                border: 2px solid #70e61c;
+                // background-position: 50% 50%;
+                background-size: 0% 100%;
+                background-image: linear-gradient(#202B40, #202B40);
+                background-repeat: no-repeat;
+                transition: background-size 0.5s, color 0.5s;
+                width: fit-content;
+        }
+
+        > button:hover {
+                color: white;
+                font-weight: 700;
+                // background-position: 0% 50%;
+                background-size: 100% 100%;
+        }
+
+        > .wording {
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            > .wording-intro {
+                background-color: transparent;
+                > p {
+                    transform: rotate(-90deg);
+                    font-weight: 200;
+                    font-size: 56px;
+                    margin-top: 10px;
+                    margin-right: -10px;
+                    background-color: transparent;
+                }
+            }
+            > .wording-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: transparent;
+                > h1 {
+                    font-size: 72px;
+                    background-color: transparent;
+                }
+
+                > span {
+                    background-color: transparent;
+                    font-size: 38px;
+                    color: #9206bc;
+                    margin-top: -16px;
+                }
+            }
+        }
+    }
+
+    > .header-contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+        height: 150px;
+        margin-bottom: 2%;
+
+        > .header-contact-container {
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+
+            > .line {
+                display: flex;
+                align-items: center;
+                height: 4px;
+                width: 100px;
+                background-color: #70e61c;
+            }
+
+            > a {
+                text-decoration: none;
+                color: white;
+                margin-left: 16px;
+                background-color: transparent;
+            }
+            > .contact-icons {
+                display: flex;
+                background-color: transparent;
+                > a {
+                    background-color: transparent;
+                    > img {
+                        width: 40px;
+                        height: 40px;
+                        margin-left: 16px;
+                        background: transparent;
+                    }
+
+                    > img:hover {
+                        transform: scale(1.15);
+                        filter: drop-shadow(2px 2px 6px 10px #70e61c);
+                    }
+                }
+            }
+        }
+
+        > .scroll-down {
+            background-color: transparent;
+            cursor: pointer;
+            > span {
+                transform: rotate(90deg);
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                background-color: transparent;
+                margin-right: -32px;
+                > img {
+                    background-color: transparent;
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+    }
+}

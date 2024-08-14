@@ -1,0 +1,11 @@
+{
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt",
+    "imprint": "Impressum",
+    "language": {
+      "english": "Englisch",
+      "german": "Deutsch"
+    }
+  }

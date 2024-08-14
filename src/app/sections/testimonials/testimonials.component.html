@@ -1,0 +1,42 @@
+<section class="testimonials-content">
+  <section
+    class="testimonials-headline"
+    data-aos="fade-right"
+    data-aos-duration="1800"
+  >
+    <div class="testimonials-headline-container">
+      <div class="testimonials-line"></div>
+      <div class="testimonials-headline-text-container">
+        <h2>TESTIMONIALS</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, sunt.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <div class="carousel-container" data-aos="fade-up" data-aos-duration="1800">
+    <img
+      class="quotation-marks"
+      src="/assets/img/QUOTATION-MARKS-ICON.svg"
+      alt="Quotation Marks"
+    />
+
+    <div class="testimonial-text-content">
+      <p>{{ currentTestimonial.text }}</p>
+    </div>
+    
+    <div class="testimonial-image-content">
+      <img [src]="currentTestimonial.image" alt="Testimonial Image" />
+    </div>
+    
+  </div>
+  
+  <div class="testimonial-navigation">
+    <button (click)="previousTestimonial()">&#10094;</button>
+    <button (click)="nextTestimonial()">&#10095;</button>
+  </div>
+
+</section>

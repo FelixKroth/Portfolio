@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="VUE-JS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" x="20" y="24.02" width="60" height="51.96"/>
+    </clipPath>
+  </defs>
+  <g class="cls-3">
+    <g>
+      <path class="cls-1" d="M80,24.02l-30,51.96L20,24.02h12l18,31.18,18-31.18h12Z"/>
+      <path class="cls-1" d="M65.35,24.02l-15.35,26.59-15.35-26.59h8.42l6.93,12,6.93-12h8.42Z"/>
+    </g>
+  </g>
+</svg>

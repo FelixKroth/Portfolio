@@ -1,0 +1,56 @@
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > .about-text-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 64px;
+        background: transparent;
+        width: 50%;
+
+        > h2 {
+            font-size: 48px;
+            background: transparent;
+            margin-bottom: 32px;
+        }
+
+        > .about-category {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 32px 0px;
+            gap: 32px;
+            > p {
+                width: 80%;
+            }
+        }
+    }
+
+    > .profile-image-content {
+        width: 50%;
+        > .profile-image {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            > .profile-image-container {
+                border: 4px solid #70e61c;
+                border-radius: 100%;
+                width: 450px;
+                height: 450px;
+                background-image: url("/assets/img/main-image.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+
+            > .line {
+                width: 100px;
+                height: 4px;
+                background-color: #70e61c;
+            }
+        }
+    }
+}

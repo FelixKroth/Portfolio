@@ -1,0 +1,228 @@
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+
+    > .portfolio-headline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 80px 0px;
+
+        > .portfolio-headline-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+
+            > .portfolio-headline-text-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                > h2 {
+                    font-size: 48px;
+                    left: 40%;
+                    background-color: #141d2f;
+                    padding: 0px 32px;
+                    z-index: 2;
+                }
+                > p {
+                    text-align: left;
+                    margin-top: 16px;
+                    width: 50%;
+                }
+            }
+            > .portfolio-line {
+                position: absolute;
+                top: 32px;
+                z-index: 1;
+                height: 4px;
+                width: 80%;
+                background-color: #9206bc;
+            }
+        }
+    }
+
+    > .portfolio-section:nth-child(odd) {
+        display: flex;
+        align-items: center;
+        margin-bottom: 64px;
+
+        > .portfolio-image-content {
+            display: flex;
+            justify-content: center;
+            > .portfolio-image {
+                width: 85%;
+            }
+        }
+
+        > .portfolio-text-content:nth-child(even) {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            padding: 32px 64px 32px 0px;
+
+            > h2 {
+                font-weight: 600;
+                font-size: 40px;
+                color: #9206bc;
+            }
+
+            > h3 {
+                font-weight: 400;
+                font-size: 20px;
+                color: #70e61c;
+                margin-bottom: 32px;
+            }
+
+            > .portfolio-text-content-button-container {
+                display: flex;
+                gap: 16px;
+                > button:first-child {
+                    color: #141d2f;
+                    font-weight: 600;
+                    padding: 8px 32px;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    margin-top: 32px;
+                    background-color: #9206bc;
+                    border: 2px solid #9206bc;
+                    // background-position: 50% 50%;
+                    background-size: 0% 100%;
+                    background-image: linear-gradient(#141d2f, #141d2f);
+                    background-repeat: no-repeat;
+                    transition:
+                        background-size 0.5s,
+                        color 0.5s;
+                    width: fit-content;
+                }
+
+                > button:first-child:hover {
+                    color: white;
+                    font-weight: 600;
+                    // background-position: 0% 50%;
+                    background-size: 100% 100%;
+                }
+
+                > button:last-child {
+                    color: white;
+                    font-weight: 500;
+                    padding: 8px 32px;
+                    border-radius: 8px;
+
+                    margin-top: 32px;
+                    background-color: transparent;
+                    border: 2px solid #70e61c;
+                    // background-position: 50% 50%;
+                    background-size: 0% 100%;
+                    background-image: linear-gradient(#70e61c, #70e61c);
+                    background-repeat: no-repeat;
+                    transition:
+                        background-size 0.5s,
+                        color 0.5s;
+                    width: fit-content;
+                }
+
+                > button:last-child:hover {
+                    color: #141d2f;
+                    font-weight: 700;
+                    // background-position: 0% 50%;
+                    background-size: 100% 100%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    > .portfolio-section:nth-child(even) {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        margin-bottom: 64px;
+
+        > .portfolio-image-content {
+            display: flex;
+            justify-content: center;
+            > .portfolio-image {
+                width: 85%;
+            }
+        }
+
+        > .portfolio-text-content:nth-child(even) {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            padding: 32px 0px 32px 64px;
+
+            > h2 {
+                font-weight: 600;
+                font-size: 40px;
+                color: #9206bc;
+            }
+
+            > h3 {
+                font-weight: 400;
+                font-size: 20px;
+                color: #70e61c;
+                margin-bottom: 32px;
+            }
+
+            > .portfolio-text-content-button-container {
+                display: flex;
+                gap: 16px;
+                > button:first-child {
+                    color: #141d2f;
+                    font-weight: 600;
+                    padding: 8px 32px;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    margin-top: 32px;
+                    background-color: #9206bc;
+                    border: 2px solid #9206bc;
+                    // background-position: 50% 50%;
+                    background-size: 0% 100%;
+                    background-image: linear-gradient(#141d2f, #141d2f);
+                    background-repeat: no-repeat;
+                    transition:
+                        background-size 0.5s,
+                        color 0.5s;
+                    width: fit-content;
+                }
+
+                > button:first-child:hover {
+                    color: white;
+                    font-weight: 600;
+                    // background-position: 0% 50%;
+                    background-size: 100% 100%;
+                }
+
+                > button:last-child {
+                    color: white;
+                    font-weight: 500;
+                    padding: 8px 32px;
+                    border-radius: 8px;
+
+                    margin-top: 32px;
+                    background-color: transparent;
+                    border: 2px solid #70e61c;
+                    // background-position: 50% 50%;
+                    background-size: 0% 100%;
+                    background-image: linear-gradient(#70e61c, #70e61c);
+                    background-repeat: no-repeat;
+                    transition:
+                        background-size 0.5s,
+                        color 0.5s;
+                    width: fit-content;
+                }
+
+                > button:last-child:hover {
+                    color: #141d2f;
+                    font-weight: 700;
+                    // background-position: 0% 50%;
+                    background-size: 100% 100%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

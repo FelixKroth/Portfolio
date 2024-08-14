@@ -1,0 +1,29 @@
+body {
+    background-color: #06171e;
+}
+
+* {
+    margin: 0;
+    color: whitesmoke;
+    font-family: "Poppins";
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #70e61c #dddddd00;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    > #main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #141d2f;
+        max-width: 1920px;
+        overflow: hidden;
+    }
+
+
+}

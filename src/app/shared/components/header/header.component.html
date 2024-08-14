@@ -1,0 +1,59 @@
+<section class="header-content" data-aos="fade-down" data-aos-duration="1800">
+  <header class="navbar">
+    <div class="logo">
+      <h2>
+        <span>FELI<span>X</span></span>
+      </h2>
+    </div>
+    <nav class="mobile-menu">
+      <div *ngIf="isDropdownOpen" class="mobile-menu-links" id="mobile-dropdown">
+        <a (click)="scrollToSection('about', $event)" id="mobile-menu-about">{{ 'about' | translate }}</a>
+        <a (click)="scrollToSection('skills', $event)" id="mobile-menu-skills">{{ 'skills' | translate }}</a>
+        <a (click)="scrollToSection('portfolio', $event)" id="mobile-menu-portfolio">{{ 'portfolio' | translate }}</a>
+        <a (click)="scrollToSection('contact', $event)" id="mobile-menu-contact">{{ 'contact' | translate }}</a>
+        <a (click)="scrollToSection('imprint', $event)" id="mobile-menu-imprint">{{ 'imprint' | translate }}</a>
+        <div class="flag-container">
+          <img
+            (click)="switchLanguage('en')"
+            class="english"
+            src="../assets/img/flag-british.png"
+            alt="{{ 'language.english' | translate }}"
+          />
+          <img
+            (click)="switchLanguage('de')"
+            class="german"
+            src="../assets/img/flag-german.png"
+            alt="{{ 'language.german' | translate }}"
+          />
+        </div>
+      </div>
+      <a class="icon-mobile-menu" (click)="toggleDropdown($event)">
+        <img
+          class="icon-mobile-menu-image"
+          src="../assets/img/mobile-menu-icon.png"
+          alt="Mobile menu icon"
+        />
+      </a>
+    </nav>
+    <nav class="menu">
+      <div class="menu-links">
+        <img
+          (click)="switchLanguage('en')"
+          class="english"
+          src="../assets/img/flag-british.png"
+          alt="{{ 'language.english' | translate }}"
+        />
+        <img
+          (click)="switchLanguage('de')"
+          class="german"
+          src="../assets/img/flag-german.png"
+          alt="{{ 'language.german' | translate }}"
+        />
+        <a (click)="scrollToSection('about', $event)" id="menu-about">{{ 'about' | translate }}</a>
+        <a (click)="scrollToSection('skills', $event)" id="menu-skills">{{ 'skills' | translate }}</a>
+        <a (click)="scrollToSection('portfolio', $event)" id="menu-portfolio">{{ 'portfolio' | translate }}</a>
+        <a (click)="scrollToSection('contact', $event)" id="menu-contact">{{ 'contact' | translate }}</a>
+      </div>
+    </nav>
+  </header>
+</section>

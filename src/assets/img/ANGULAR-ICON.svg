@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="ANGLUAR" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M50,20l27.9,9.96-4.25,36.93-23.65,13.11-23.65-13.11-4.25-36.93,27.9-9.96ZM50,26.63l-17.44,39.15h6.5l3.51-8.76h14.8l3.51,8.76h6.5l-17.38-39.15ZM55.09,51.62h-10.19l5.09-12.27,5.09,12.27Z"/>
+</svg>

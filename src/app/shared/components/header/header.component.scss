@@ -1,0 +1,132 @@
+.header-content {
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    > header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1920px;
+        width: 96.5%;
+        height: 80px;
+
+        > .menu {
+            > div {
+                display: flex;
+                align-items: center;
+                > img {
+                    height: 16px;
+                    margin-right: 8px;
+                }
+
+                > img:hover {
+                    cursor: pointer;
+                    transform: scale(1.05);
+                }
+
+                > a {
+                    text-decoration: none;
+                    color: white;
+                    border: none;
+                    margin-left: 8px;
+                }
+
+                > a:hover {
+                    color: #70e61c;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        > .mobile-menu {
+            
+            > a {
+                > img {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 48px;
+                    margin-right: -10px;
+                    cursor: pointer;
+                }
+            }
+
+            > .mobile-menu-links {
+                > .flag-container {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: 16px 16px;
+                    background-color: rgba(255, 255, 255, 0.75);
+            
+                    > img {
+                        height: 16px;
+                        margin-left: 8px;
+                        cursor: pointer;
+                    }
+
+                    > img:hover {
+                        cursor: pointer;
+                        transform: scale(1.05);
+                    }
+                }
+
+                > .flag-container:hover {
+                    cursor: pointer;
+                    background-color: rgba(255, 255, 255, 0.9);
+                }
+
+                > a {
+                    text-decoration: none;
+                    color: #141d2f;
+                    margin-left: 16px;
+                }
+
+                > a:hover {
+                    color: #70e61c;
+                }
+            }
+
+            > .mobile-menu-links {
+                position: absolute;
+                top: 80px;
+                right: 0px;
+                width: 100%;
+                
+                > a {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    margin: 0px 0px 1px 0px;
+                    text-decoration: none;
+                    background-color: rgba(255, 255, 255, 0.75);
+                    padding: 8px 16px;
+                    text-decoration: none;
+                    font-size: 24px;
+                    color: #000000d6;
+                }
+
+                > a:hover {
+                    cursor: pointer;
+                    background-color: rgba(255, 255, 255, 0.9);
+                }
+            }
+        }
+
+        > .logo {
+            color: white;
+            cursor: pointer;
+
+            > h2 {
+                > span {
+                    > span {
+                        color: #70e61c;
+                    }
+                }
+            }
+        }
+    }
+}

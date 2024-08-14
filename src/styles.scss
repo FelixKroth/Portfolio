@@ -1,1 +1,455 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    font-family: "Poppins";
+    background-color: #141d2f;
+}
+
+/* poppins-100 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 100;
+    src: url("./assets/fonts/poppins-v21-latin-100.ttf") format("truetype"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-200 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 200;
+    src: url("./assets/fonts/poppins-v21-latin-200.ttf") format("truetype"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    src: url("./assets/fonts/poppins-v21-latin-300.ttf") format("truetype"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./assets/fonts/poppins-v21-latin-regular.ttf") format("truetype"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 400;
+    src: url("./assets/fonts/poppins-v21-latin-italic.ttf") format("truetype"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    src: url("./assets/fonts/poppins-v21-latin-500.ttf") format("truetype"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    src: url("./assets/fonts/poppins-v21-latin-600.ttf") format("truetype"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    src: url("./assets/fonts/poppins-v21-latin-700.ttf") format("truetype"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-800 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 800;
+    src: url("./assets/fonts/poppins-v21-latin-800.ttf") format("truetype"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-900 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 900;
+    src: url("./assets/fonts/poppins-v21-latin-900.ttf") format("truetype"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@media screen and (min-width: 780px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .about-content {
+        flex-direction: column-reverse;
+    }
+
+    .profile-image-content {
+        width: 100% !important;
+    }
+
+    .about-text-content {
+        width: 80% !important;
+    }
+
+    .profile-image-container {
+        border: 4px solid #70e61c !important;
+    }
+
+    .line {
+        min-width: 25%;
+    }
+
+    .header-intro {
+        margin-top: 20% !important;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .skills-content {
+        flex-direction: column-reverse;
+    }
+
+    .skills-text-content {
+        width: unset !important;
+    }
+
+    .skills-image-content {
+        width: unset !important;
+        padding: 32px 32px 32px 32px !important;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .portfolio-section:nth-child(odd) {
+        flex-direction: column !important;
+    }
+
+    .portfolio-text-content:nth-child(odd) {
+        padding: 32px !important;
+    }
+
+    .portfolio-text-content:nth-child(even) {
+        padding: 32px !important;
+    }
+
+    .portfolio-section:nth-child(even) {
+        flex-direction: column !important;
+    }
+
+    .contact-line {
+        width: 8% !important;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-form-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 64px;
+        width: unset;
+    }
+
+    .contact-content-container {
+        flex-direction: column;
+    }
+
+    .contact-form-content,
+    .contact-text-content {
+        width: unset !important;
+    }
+
+    .contact-text-content p {
+        margin: 0 10% !important;
+    }
+
+    #footer {
+        height: 150px !important;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px 0px !important;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 2px solid #70e61c;
+        height: 200px !important;
+    }
+
+    .footer-logo img {
+        height: 56px;
+    }
+
+    #github-icon-footer {
+        margin: 0 !important;
+    }
+
+    .datenschutz {
+        margin-top: 94px;
+    }
+
+    .impressum {
+        margin-top: 94px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .carousel-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 32px;
+        width: 60% !important;
+    }
+
+    .testimonial-text-content {
+        justify-content: center;
+        width: 100% !important;
+
+        p {
+            font-size: 14px;
+            width: 100% !important;
+        }
+    }
+
+    .button-container {
+        justify-content: center !important;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .menu {
+        display: none !important;
+    }
+
+    .profile-image-container {
+        margin: 32px 0px 32px 16px;
+    }
+
+    .header-content header {
+        width: 95% !important;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .header-intro {
+        margin-top: 35% !important;
+    }
+
+    .line {
+        width: unset !important;
+        min-width: 15%;
+    }
+
+    .header-contact-container {
+        > a {
+            display: none;
+        }
+    }
+    
+    .scroll-down {
+        display: none;
+    }
+
+    .wording-intro {
+        background-color: transparent;
+        > p {
+            font-size: 38px !important;
+            margin-top: 10px;
+            margin-right: -10px;
+        }
+    }
+
+    .wording-container {
+        > h1 {
+            font-size: 56px !important;
+        }
+
+        > span {
+            font-size: 24px !important;
+        }
+    }
+
+    .header-content header {
+        width: 90% !important;
+    }
+
+    .profile-image-container {
+        width: 350px !important;
+        height: 350px !important;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .about-category {
+        flex-direction: column;
+
+        > svg {
+            margin-bottom: 8px;
+        }
+    }
+
+    .about-category p {
+        width: 100% !important;
+    }
+
+    .about-text-content,
+    .skills-text-content {
+        padding: 32px 0px 32px 32px !important;
+    }
+
+    .about-text-content {
+        padding: 32px !important;
+    }
+
+    .skills-text-content p {
+        padding-right: 32px !important;
+    }
+
+    .skills-image-content {
+        padding: 32px 16px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-intro {
+        margin-top: 60% !important;
+    }
+
+    h2 {
+        font-size: 32px !important;
+    }
+
+    p {
+        font-size: 14px !important;
+    }
+
+    .testimonials-headline-text-container {
+        > h2 {
+            padding: 0px 16px !important;
+        }
+
+        > p {
+            width: 80%;
+            margin-top: 16px;
+        }
+    }
+
+    .testimonials-line {
+        top: 20px !important;
+    }
+
+    .profile-image-container {
+        width: 300px !important;
+        height: 300px !important;
+    }
+
+    .testimonial-text-content {
+        width: unset !important;
+    }
+
+    .wording-intro {
+        background-color: transparent;
+        > p {
+            font-size: 30px !important;
+            margin-top: 4px !important;
+            margin-right: -10px !important;
+            margin-left: -16px !important;
+        }
+    }
+    .wording-container {
+        > h1 {
+            font-size: 42px !important;
+            margin-bottom: 2px;
+        }
+
+        > span {
+            font-size: 24px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .header-content header {
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .profile-image-container {
+        width: 250px !important;
+        height: 250px !important;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .portfolio-text-content-button-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .portfolio-content {
+        button:last-child {
+            margin-top: 0px !important;
+        }
+    }
+
+    .skills-icons-container {
+        > svg {
+            height: 100px;
+            width: 100px;
+        }
+
+        > span {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header-intro {
+        margin-top: 70% !important;
+    }
+
+    .profile-image-container {
+        width: 200px !important;
+        height: 200px !important;
+    }
+
+    .wording-intro {
+        background-color: transparent;
+        > p {
+            font-size: 24px !important;
+            margin-top: 4px !important;
+            margin-right: -8px !important;
+        }
+    }
+
+    .wording-container {
+        > h1 {
+            font-size: 36px !important;
+            margin-bottom: 2px;
+        }
+
+        > span {
+            font-size: 18px !important;
+        }
+    }
+}

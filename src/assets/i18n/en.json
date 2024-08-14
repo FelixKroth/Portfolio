@@ -1,0 +1,11 @@
+{
+    "about": "About",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "imprint": "Imprint",
+    "language": {
+      "english": "English",
+      "german": "German"
+    }
+  }

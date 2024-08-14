@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
+  <g>
+    <g id="CLOSE-FULL-ICON">
+      <g>
+        <path class="cls-1" d="M25.7,25l20.7,21.8"/>
+        <path class="cls-1" d="M25.7,47l20.5-21.9"/>
+      </g>
+    </g>
+    <g id="CLOSE-MEDIUM-ICON">
+      <g>
+        <path class="cls-1" d="M26.6-64l18.9,23.3"/>
+        <path class="cls-1" d="M33.6-52h5"/>
+        <path class="cls-1" d="M26.6-41l18.9-23.3"/>
+      </g>
+    </g>
+    <g id="TRANSITION-ICON">
+      <g>
+        <path class="cls-1" d="M21-154h30"/>
+        <path class="cls-1" d="M31-140h10"/>
+        <path class="cls-1" d="M21-126h30"/>
+      </g>
+    </g>
+    <g id="MENU-ICON">
+      <g>
+        <path class="cls-1" d="M21-242h30"/>
+        <path class="cls-1" d="M21-228h30"/>
+        <path class="cls-1" d="M21-214h30"/>
+      </g>
+    </g>
+  </g>
+</svg>

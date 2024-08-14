@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 898 976">
+  <defs>
+    <style>
+      .cls-1 {
+        mask: url(#mask);
+      }
+
+      .cls-2 {
+        fill: #70e61c;
+      }
+
+      .cls-3 {
+        filter: url(#luminosity-noclip);
+      }
+    </style>
+    <filter id="luminosity-noclip" x="91" y="91" width="716" height="794" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask" x="91" y="91" width="716" height="794" maskUnits="userSpaceOnUse">
+      <g class="cls-3">
+        <image width="716" height="794" transform="translate(91 91)" xlink:href="SPLASH-02-1.png"/>
+      </g>
+    </mask>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
+  <g>
+    <g id="Ebene_1">
+      <g class="cls-1">
+        <g id="Ebene_1-2" data-name="Ebene_1">
+          <path class="cls-2" d="M102.7,882.5c-69.5-.8,257.7-513.1,257.7-513.1,0,0,59.2-32.4,125.9-75.2,42.3-27.1,69.1-72.2,74.3-122.1,5.5-52.1,41-95.8,91.7-72.8,43.2,19.5,41.6,65.1-17.4,113.4-20.8,17-19.8,49.4,2.1,64.9,20.5,14.5,14.9,22.4,52.3,19,185.6-17.3,91.5,102,91.5,102,0,0-74.5,66.8-65.3,134.5v.6c9.1,67.1,9.9,72.5-254.9,159.8-265.5,87.6-288.3,189.8-357.9,189h0Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

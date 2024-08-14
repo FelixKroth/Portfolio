@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="CLOSE-MEDIUM-ICON" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M26.56,24l18.88,23.31"/>
+  <path class="cls-1" d="M33.56,36h5"/>
+  <path class="cls-1" d="M26.56,47l18.88-23.31"/>
+</svg>
