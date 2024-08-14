@@ -18,8 +18,8 @@ import { RouterModule } from '@angular/router';
 })
 export class ContactComponent {
   contactForm: FormGroup;
-  messageSent = false; // Initialize messageSent
-  submissionError = false; // Initialize submissionError
+  messageSent = false; 
+  submissionError = false; 
 
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
@@ -29,7 +29,7 @@ export class ContactComponent {
     });
   }
 
-  // Getter for easy access to form controls in the template
+  
   get formControls() {
     return this.contactForm.controls;
   }
@@ -37,20 +37,20 @@ export class ContactComponent {
   onSubmit() {
     if (this.contactForm.valid) {
       const formData = this.contactForm.value;
-      // Replace the URL with your backend API endpoint to handle the email sending
+      
       console.log('Sending email with the following data:', formData);
-      this.messageSent = true; // Show success message
+      this.messageSent = true; 
       setTimeout(() => {
         this.messageSent = false;
-      }, 2500);
-      this.submissionError = false; // Hide error message if previously shown
+      }, 3500);
+      this.submissionError = false; 
       this.contactForm.reset();
     } else {
-      this.messageSent = false; // Hide success message if previously shown
-      this.submissionError = true; // Show error message
+      this.messageSent = false; 
+      this.submissionError = true; 
       setTimeout(() => {
         this.submissionError = false;
-      }, 2500);
+      }, 3500);
     }
   }
 

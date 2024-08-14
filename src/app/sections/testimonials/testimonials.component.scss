@@ -65,12 +65,12 @@
             justify-content: flex-start;
             text-align: left;
             margin-bottom: 20px;
-            width: 60%;
+            width: 100%;
             p {
                 display: flex;
                 font-size: 16px;
                 color: white;
-                width: 100%;
+                width: 85%;
             }
         }
 
@@ -79,8 +79,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 200px;
-                height: 200px;
+                width: 250px;
+                height: 250px;
                 object-fit: cover;
                 border-radius: 100%;
                 border: 2px solid #70e61c;

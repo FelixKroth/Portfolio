@@ -24,19 +24,21 @@
       alt="Quotation Marks"
     />
 
+    <div style = "display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between;">
     <div class="testimonial-text-content">
       <p>{{ currentTestimonial.text }}</p>
     </div>
-    
+    <div class="testimonial-navigation">
+      <button (click)="previousTestimonial()">&#10094;</button>
+      <button (click)="nextTestimonial()">&#10095;</button>
+    </div>
+    </div>
     <div class="testimonial-image-content">
       <img [src]="currentTestimonial.image" alt="Testimonial Image" />
     </div>
     
   </div>
   
-  <div class="testimonial-navigation">
-    <button (click)="previousTestimonial()">&#10094;</button>
-    <button (click)="nextTestimonial()">&#10095;</button>
-  </div>
+  
 
 </section>

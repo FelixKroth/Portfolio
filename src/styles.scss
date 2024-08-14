@@ -262,7 +262,7 @@
             display: none;
         }
     }
-    
+
     .scroll-down {
         display: none;
     }
@@ -388,6 +388,13 @@
 @media screen and (max-width: 440px) {
     .header-content header {
         width: 90% !important;
+    }
+
+    .testimonial-image-content {
+        img {
+            width: 200px !important;
+            height: 200px !important;
+        }
     }
 }
 

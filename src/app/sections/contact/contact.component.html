@@ -33,7 +33,7 @@
             placeholder="Your email"
             required
           />
-          <div *ngIf="formControls.email.invalid && formControls.email.touched && formControls.button.touched" class="error-message-inputs" data-aos="fade-up" data-aos-duration="500">
+          <div *ngIf="formControls.email.invalid && formControls.email.touched" class="error-message-inputs" data-aos="fade-up" data-aos-duration="500">
             Please fill out this field before sending the message.
           </div>
 
@@ -42,13 +42,13 @@
             placeholder="Your message"
             required
           ></textarea>
-          <div *ngIf="formControls.message.invalid && formControls.message.touched && formControls.button.touched" class="error-message-inputs" data-aos="fade-up" data-aos-duration="500">
+          <div *ngIf="formControls.message.invalid && formControls.message.touched" class="error-message-inputs" data-aos="fade-up" data-aos-duration="500">
             Please fill out this field before sending the message.
           </div>
         </div>
 
         <div class="contact-form-button-container">
-          <button formControlName="button" type="submit" [disabled]="contactForm.invalid" [ngClass]="{'disabled': contactForm.invalid}">SEND MESSAGE</button>
+          <button type="submit" [disabled]="contactForm.invalid" [ngClass]="{'disabled': contactForm.invalid}">SEND MESSAGE</button>
         </div>
       </form>
 

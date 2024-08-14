@@ -46,30 +46,27 @@ export class HeaderComponent implements OnDestroy {
 
   scrollToSection(section: string, event?: Event) {
     if (event) {
-      event.preventDefault(); // Prevent the default anchor behavior
+      event.preventDefault()
     }
 
     if (this.router.url !== '/') {
       this.sectionToScroll = section;
       this.router.navigate(['/']);
-
+      this.isDropdownOpen = false;
     } else {
       this.scrollToSectionOnPage(section);
     }
 
-    if (this.mobiledropdown) {
-      this.mobiledropdown.nativeElement.style.display = 'none';
-    }
     this.isDropdownOpen = false;
   }
 
   private scrollToSectionOnPage(section: string) {
     const element = document.getElementById(section);
     if (element) {
-      const headerOffset = 80; // Adjust based on your header's height
+      const headerOffset = 80;
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - headerOffset;
       window.scrollTo({ top: elementPosition, behavior: 'smooth' });
-      this.sectionToScroll = null; // Reset after scrolling
+      this.sectionToScroll = null;
     }
   }
 
