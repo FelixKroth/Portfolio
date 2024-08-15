@@ -63,12 +63,19 @@ export class HeaderComponent implements OnDestroy {
   private scrollToSectionOnPage(section: string) {
     const element = document.getElementById(section);
     if (element) {
-      const headerOffset = 80;
-      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - headerOffset;
-      window.scrollTo({ top: elementPosition, behavior: 'smooth' });
-      this.sectionToScroll = null;
+        const sectionHeight = element.offsetHeight;
+        const viewportHeight = window.innerHeight;
+
+        if (sectionHeight < viewportHeight) {
+            const offsetTop = element.offsetTop - ((viewportHeight - sectionHeight) / 2);
+            window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+        } else {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        this.sectionToScroll = null;
     }
-  }
+}
 
   handleOutsideClick(event: Event) {
     const clickedInside = this.elementRef.nativeElement.contains(event.target);

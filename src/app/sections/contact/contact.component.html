@@ -7,10 +7,9 @@
   <div class="contact-content-container">
     <div class="contact-text-content" data-aos="fade-right" data-aos-duration="1800">
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum ea nam
-        iure nisi sint architecto, explicabo ipsa nobis quibusdam deleniti quo
-        dolorem vel ad repellendus quaerat laboriosam porro mollitia blanditiis
-        molestiae saepe esse placeat.
+        What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+        printer took a galley of type and scrambled it to make a type specimen book.
       </p>
     </div>
 
@@ -53,10 +52,10 @@
       </form>
 
       <!-- Success or Error Message -->
-      <div #successMessage *ngIf="messageSent" class="success-message" data-aos="fade-up" data-aos-duration="1800">
+      <div *ngIf="messageSent" class="success-message" data-aos="fade-up" data-aos-duration="1800">
         Your message has been sent successfully!
       </div>
-      <div #errorMessage *ngIf="submissionError && isFormInvalid" class="error-message" data-aos="fade-up" data-aos-duration="1800">
+      <div *ngIf="submissionError && isFormInvalid" class="error-message" data-aos="fade-up" data-aos-duration="1800">
         There was an error sending your message. Please ensure all fields are filled out correctly.
       </div>
     </div>

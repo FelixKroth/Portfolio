@@ -11,15 +11,15 @@ import { CommonModule } from '@angular/common';
 export class TestimonialsComponent {
   testimonials = [
     {
-      text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, sunt.',
+      text: "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       image: '/assets/img/main-image.png',
     },
     {
-      text: 'Repudiandae ducimus id dolores aliquid excepturi iure consequuntur ex ad. Tenetur quo qui consequatur eveniet nam nihil voluptate officia distinctio.',
+      text: "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       image: '/assets/img/main-image.png',
     },
     {
-      text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum eanam iure nisi sint architecto, explicabo ipsa nobis quibusdam delenitifquo dolorem vel ad repellendus quaerat laboriosam porro molliti ablanditiis molestiae saepe esse placeat.',
+      text: "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
       image: '/assets/img/main-image.png',
     },
   ];
