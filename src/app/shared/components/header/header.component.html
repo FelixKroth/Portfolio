@@ -1,30 +1,33 @@
 <section class="header-content" data-aos="fade-down" data-aos-duration="1800">
   <header class="navbar">
     <div class="logo">
-      <h2>
-        <span>FELI<span>X</span></span>
+      <h2 style="font-weight: 400; cursor: pointer">
+        <a style="text-decoration: none; color: #9206bc;" routerLink='/'>[<span style="font-weight: 700; color: white">F<span style="color: #70e61c; font-weight: 700">K</span></span>]</a>
       </h2>
     </div>
     <nav class="mobile-menu">
       <div *ngIf="isDropdownOpen" class="mobile-menu-links" id="mobile-dropdown">
-        <a (click)="scrollToSection('about', $event)" id="mobile-menu-about">{{ 'about' | translate }}</a>
-        <a (click)="scrollToSection('skills', $event)" id="mobile-menu-skills">{{ 'skills' | translate }}</a>
-        <a (click)="scrollToSection('portfolio', $event)" id="mobile-menu-portfolio">{{ 'portfolio' | translate }}</a>
-        <a (click)="scrollToSection('contact', $event)" id="mobile-menu-contact">{{ 'contact' | translate }}</a>
-        <a routerLink="/impressum" id="mobile-menu-imprint">{{ 'imprint' | translate }}</a>
-        <div class="flag-container">
-          <img
+        <a (click)="scrollToSection('about', $event)" id="mobile-menu-about" data-aos="fade-up" data-aos-duration="1100">{{ 'about' | translate }}</a>
+        <a (click)="scrollToSection('skills', $event)" id="mobile-menu-skills" data-aos="fade-up"  data-aos-delay="50" data-aos-duration="1100">{{ 'skills' | translate }}</a>
+        <a (click)="scrollToSection('portfolio', $event)" id="mobile-menu-portfolio" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1100">{{ 'portfolio' | translate }}</a>
+        <a (click)="scrollToSection('contact', $event)" id="mobile-menu-contact" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1100">{{ 'contact' | translate }}</a>
+        <a routerLink='/impressum' id="mobile-menu-imprint" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1100">{{ 'imprint' | translate }}</a>
+        <div class="flag-container" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1100">
+          <span
             (click)="switchLanguage('en')"
-            class="english"
-            src="../assets/img/flag-british.png"
-            alt="{{ 'language.english' | translate }}"
-          />
-          <img
+            [ngClass]="{'active': translateService.currentLang === 'en'}"
+            class="flag"
+          >
+            EN
+          </span>
+          <div class="separator"></div>
+          <span
             (click)="switchLanguage('de')"
-            class="german"
-            src="../assets/img/flag-german.png"
-            alt="{{ 'language.german' | translate }}"
-          />
+            [ngClass]="{'active': translateService.currentLang === 'de'}"
+            class="flag"
+          >
+            DE
+          </span>
         </div>
       </div>
       <a class="icon-mobile-menu" (click)="toggleDropdown($event)">
@@ -37,22 +40,24 @@
     </nav>
     <nav class="menu">
       <div class="menu-links">
-        <img
+        <span
           (click)="switchLanguage('en')"
-          class="english"
-          src="../assets/img/flag-british.png"
-          alt="{{ 'language.english' | translate }}"
-        />
-        <img
+          [ngClass]="{'active': translateService.currentLang === 'en'}"
+          class="flag"
+        >
+          EN
+        </span>
+        <div class="separator"></div>
+        <span
           (click)="switchLanguage('de')"
-          class="german"
-          src="../assets/img/flag-german.png"
-          alt="{{ 'language.german' | translate }}"
-        />
+          [ngClass]="{'active': translateService.currentLang === 'de'}"
+          class="flag"
+        >
+          DE
+        </span>
         <a (click)="scrollToSection('about', $event)" id="menu-about">{{ 'about' | translate }}</a>
         <a (click)="scrollToSection('skills', $event)" id="menu-skills">{{ 'skills' | translate }}</a>
         <a (click)="scrollToSection('portfolio', $event)" id="menu-portfolio">{{ 'portfolio' | translate }}</a>
-        <a (click)="scrollToSection('contact', $event)" id="menu-contact">{{ 'contact' | translate }}</a>
       </div>
     </nav>
   </header>

@@ -3,24 +3,30 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, RouterModule, ReactiveFormsModule],
+  imports: [CommonModule, RouterModule, ReactiveFormsModule, TranslateModule],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
+
 export class ContactComponent {
   contactForm: FormGroup;
   messageSent = false;
   submissionError = false;
-
-  constructor(private fb: FormBuilder, private http: HttpClient) {
+  
+  constructor(
+    private fb: FormBuilder,
+    private http: HttpClient
+  ) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
+      checkbox: [false, Validators.requiredTrue] // Checkbox form control with requiredTrue validator
     });
   }
 
@@ -31,7 +37,7 @@ export class ContactComponent {
   onSubmit() {
     if (this.contactForm.valid) {
       const formData = new FormData();
-      formData.append('subject', this.contactForm.get('name')?.value); // Name field used as subject
+      formData.append('subject', this.contactForm.get('name')?.value);
       formData.append('email', this.contactForm.get('email')?.value);
       formData.append('message', this.contactForm.get('message')?.value);
 

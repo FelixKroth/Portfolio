@@ -19,11 +19,19 @@ export class HeaderComponent implements OnDestroy {
   private sectionToScroll: string | null = null;
 
   constructor(
-    private translateService: TranslationService,
+    public translateService: TranslationService,
     private renderer: Renderer2,
     private elementRef: ElementRef,
     private router: Router
   ) {
+
+    const savedLang = localStorage.getItem('selectedLang');
+    if (savedLang) {
+      this.translateService.switchLanguage(savedLang);
+    } else {
+      this.translateService.switchLanguage('en');
+    }
+
     this.globalClickListener = this.renderer.listen('document', 'click', (event: Event) => {
       this.handleOutsideClick(event);
     });
@@ -46,7 +54,7 @@ export class HeaderComponent implements OnDestroy {
 
   scrollToSection(section: string, event?: Event) {
     if (event) {
-      event.preventDefault()
+      event.preventDefault();
     }
 
     if (this.router.url !== '/') {
@@ -63,19 +71,19 @@ export class HeaderComponent implements OnDestroy {
   private scrollToSectionOnPage(section: string) {
     const element = document.getElementById(section);
     if (element) {
-        const sectionHeight = element.offsetHeight;
-        const viewportHeight = window.innerHeight;
+      const sectionHeight = element.offsetHeight;
+      const viewportHeight = window.innerHeight;
 
-        if (sectionHeight < viewportHeight) {
-            const offsetTop = element.offsetTop - ((viewportHeight - sectionHeight) / 2);
-            window.scrollTo({ top: offsetTop, behavior: 'smooth' });
-        } else {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
+      if (sectionHeight < viewportHeight) {
+        const offsetTop = element.offsetTop - ((viewportHeight - sectionHeight) / 2);
+        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+      } else {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
 
-        this.sectionToScroll = null;
+      this.sectionToScroll = null;
     }
-}
+  }
 
   handleOutsideClick(event: Event) {
     const clickedInside = this.elementRef.nativeElement.contains(event.target);
@@ -86,6 +94,7 @@ export class HeaderComponent implements OnDestroy {
 
   switchLanguage(language: string) {
     this.translateService.switchLanguage(language);
+    localStorage.setItem('selectedLang', language);
   }
 
   ngOnDestroy() {

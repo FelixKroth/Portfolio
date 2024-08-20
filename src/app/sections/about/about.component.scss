@@ -2,12 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    margin-top: 128px;
     > .about-text-content {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 64px;
+        padding: 64px 64px 64px 100px;
         background: transparent;
         width: 50%;
 
@@ -15,6 +15,8 @@
             font-size: 48px;
             background: transparent;
             margin-bottom: 32px;
+            word-break: break-word;
+            min-width: 150px;
         }
 
         > .about-category {
@@ -22,18 +24,39 @@
             justify-content: space-evenly;
             padding: 32px 0px;
             gap: 32px;
-            > p {
+
+            .about-text-container {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            h3 {
                 width: 80%;
+                word-break: break-word;
+                color:#9206bc;
             }
         }
     }
 
     > .profile-image-content {
         width: 50%;
+        position: relative;
+
+        .background-shadow {
+            position: absolute;
+            right: -200px;
+            top: -300px;
+            z-index: -1;
+            background-color: transparent;
+            height: 500px;
+            transform: rotate(-25deg);
+        }
+
         > .profile-image {
             display: flex;
             align-items: center;
             justify-content: flex-end;
+            background: transparent;
 
             > .profile-image-container {
                 border: 4px solid #70e61c;
@@ -41,13 +64,14 @@
                 width: 450px;
                 height: 450px;
                 background-image: url("/assets/img/main-image.png");
+                background-color: transparent;
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
             }
 
             > .line {
-                width: 100px;
+                width: 25%;
                 height: 4px;
                 background-color: #70e61c;
             }

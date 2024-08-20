@@ -3,63 +3,59 @@
     <div class="portfolio-headline-container">
       <div class="portfolio-line"></div>
       <div class="portfolio-headline-text-container">
-        <h2>PORTFOLIO</h2>
+        <h2>{{ 'portfolioContent.headline' | translate }}</h2>
         <p>
-      What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
-      and typesetting industry. Lorem Ipsum has been the industry's standard 
-      dummy text ever since the 1500s, when an unknown printer took a galley 
-      of type and scrambled it to make a type specimen book.
+          {{ 'portfolioContent.description' | translate }}
         </p>
       </div>
     </div>
   </section>
+
+  <img src="/assets/img/shadows/shadow_purple_04.png" alt="Background shadow" class="background-shadow" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1800">
 
   <section class="portfolio-section" data-aos="fade-right" data-aos-duration="1800">
     <div class="portfolio-image-content">
       <img
         class="portfolio-image"
         src="../assets/img/pokedex-device-mockup.png"
-        alt=""
+        alt="Pokedex project image"
       />
     </div>
     <div class="portfolio-text-content">
-      <h2>POKEDEX</h2>
-      <h3>JAVASCRIPT | HTML | CSS | API</h3>
+      <h2>{{ 'portfolioContent.pokedex.title' | translate }}</h2>
+      <h3>{{ 'portfolioContent.pokedex.subtitle' | translate }}</h3>
       <p>
-      What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
-      and typesetting industry. Lorem Ipsum has been the industry's standard 
-      dummy text ever since the 1500s, when an unknown printer took a galley 
-      of type and scrambled it to make a type specimen book.
+        {{ 'portfolioContent.pokedex.description' | translate }}
       </p>
       <div class="portfolio-text-content-button-container">
-        <button>LIVE TEST</button>
-        <button>GIT HUB</button>
+        <button><a target="_blank" href="https://felix-kroth.de/pokedex" style="text-decoration: none; color: inherit; background: transparent;">{{ 'portfolioContent.pokedex.button_live_test' | translate }}</a></button>
+        <button><a target="_blank" href="https://github.com/FelixKroth/Pokedex" style="text-decoration: none; color: inherit; background: transparent;">{{ 'portfolioContent.pokedex.button_github' | translate }}</a></button>
       </div>
     </div>
   </section>
 
-  <section class="portfolio-section" data-aos="fade-left" data-aos-duration="1800">
+  <section style="position: relative" class="portfolio-section" data-aos="fade-left" data-aos-duration="1800">
+    
     <div class="portfolio-image-content">
       <img
         class="portfolio-image"
         src="../assets/img/join-device-mockup.png"
-        alt=""
+        alt="Join project image"
       />
     </div>
+    
     <div class="portfolio-text-content">
-      <h2>JOIN</h2>
-      <h3>JAVASCRIPT | HTML | CSS | FIREBASE</h3>
+      <h2>{{ 'portfolioContent.join.title' | translate }}</h2>
+      <h3>{{ 'portfolioContent.join.subtitle' | translate }}</h3>
       <p>
-      What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
-      and typesetting industry. Lorem Ipsum has been the industry's standard 
-      dummy text ever since the 1500s, when an unknown printer took a galley 
-      of type and scrambled it to make a type specimen book.
+        {{ 'portfolioContent.join.description' | translate }}
       </p>
       <div class="portfolio-text-content-button-container">
-        <button>LIVE TEST</button>
-        <button>GIT HUB</button>
+        <button><a target="_blank" href="https://felix-kroth.de/join" style="text-decoration: none; color: inherit; background: transparent;">{{ 'portfolioContent.join.button_live_test' | translate }}</a></button>
+        <button><a target="_blank" href="https://github.com/FelixKroth/Join-Kanban-Board---G.4" style="text-decoration: none; color: inherit; background: transparent;">{{ 'portfolioContent.join.button_github' | translate }}</a></button>
       </div>
     </div>
+
   </section>
 
   <section class="portfolio-section" data-aos="fade-right" data-aos-duration="1800">
@@ -67,21 +63,18 @@
       <img
         class="portfolio-image"
         src="../assets/img/el-pollo-loco-device-mockup.png"
-        alt=""
+        alt="El Pollo Loco project image"
       />
     </div>
     <div class="portfolio-text-content">
-      <h2>EL POLLO LOCO</h2>
-      <h3>JAVASCRIPT | HTML | CSS | OBJECT ORIENTATION</h3>
+      <h2>{{ 'portfolioContent.el_pollo_loco.title' | translate }}</h2>
+      <h3>{{ 'portfolioContent.el_pollo_loco.subtitle' | translate }}</h3>
       <p>
-      What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
-      and typesetting industry. Lorem Ipsum has been the industry's standard 
-      dummy text ever since the 1500s, when an unknown printer took a galley 
-      of type and scrambled it to make a type specimen book.
+        {{ 'portfolioContent.el_pollo_loco.description' | translate }}
       </p>
       <div class="portfolio-text-content-button-container">
-        <button>LIVE TEST</button>
-        <button>GIT HUB</button>
+        <button><a target="_blank" href="https://felix-kroth.de/el-pollo-loco" style="text-decoration: none; color: inherit; background: transparent;">{{ 'portfolioContent.el_pollo_loco.button_live_test' | translate }}</a></button>
+        <button><a target="_blank" href="https://github.com/FelixKroth/El-pollo-loco" style="text-decoration: none; color: inherit; background: transparent;">{{ 'portfolioContent.el_pollo_loco.button_github' | translate }}</a></button>
       </div>
     </div>
   </section>
@@ -90,22 +83,19 @@
     <div class="portfolio-image-content">
       <img
         class="portfolio-image"
-        src="../assets/img/pokedex-device-mockup.png"
-        alt=""
+        src="../assets/img/portfolio-device-mockup.png"
+        alt="Portfolio project image"
       />
     </div>
     <div class="portfolio-text-content">
-      <h2>PORTFOLIO</h2>
-      <h3>ANGULAR | TYPESCRIPT | HTML | CSS | HOSTING</h3>
+      <h2>{{ 'portfolioContent.portfolio.title' | translate }}</h2>
+      <h3>{{ 'portfolioContent.portfolio.subtitle' | translate }}</h3>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum ea nam
-        iure nisi sint architecto, explicabo ipsa nobis quibusdam deleniti quo
-        dolorem vel ad repellendus quaerat laboriosam porro mollitia blanditiis
-        molestiae saepe esse placeat.
+        {{ 'portfolioContent.portfolio.description' | translate }}
       </p>
       <div class="portfolio-text-content-button-container">
-        <button>LIVE TEST</button>
-        <button>GIT HUB</button>
+        <button><a target="_blank" href="https://felix-kroth.de" style="text-decoration: none; color: inherit; background: transparent;">{{ 'portfolioContent.portfolio.button_live_test' | translate }}</a></button>
+        <button><a target="_blank" href="https://github.com/FelixKroth/Portfolio" style="text-decoration: none; color: inherit; background: transparent;">{{ 'portfolioContent.portfolio.button_github' | translate }}</a></button>
       </div>
     </div>
   </section>

@@ -1,30 +1,77 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
+import { Subscription } from 'rxjs';
+
+interface Testimonial {
+  key: string;
+  image: string;
+  text?: string;
+  author?: string;
+}
 
 @Component({
   selector: 'app-testimonials',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule, TranslateModule],
   templateUrl: './testimonials.component.html',
   styleUrls: ['./testimonials.component.scss'],
 })
-export class TestimonialsComponent {
-  testimonials = [
+
+export class TestimonialsComponent implements OnInit, OnDestroy {
+
+  testimonials: Testimonial[] = [
     {
-      text: "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      image: '/assets/img/main-image.png',
+      key: 'testimonial1',
+      image: '/assets/img/testimonial-image-01.png',
     },
     {
-      text: "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      image: '/assets/img/main-image.png',
+      key: 'testimonial2',
+      image: '/assets/img/testimonial-image-02.png',
     },
     {
-      text: "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-      image: '/assets/img/main-image.png',
+      key: 'testimonial3',
+      image: '/assets/img/testimonial-image-03.png',
     },
   ];
 
   currentTestimonialIndex = 0;
+  private langChangeSubscription!: Subscription;
+
+  constructor(private translateService: TranslateService) {}
+
+  ngOnInit() {
+    this.loadTranslations();
+    this.langChangeSubscription = this.translateService.onLangChange.subscribe(() => {
+      this.loadTranslations();
+    });
+  }
+
+  loadTranslations() {
+    this.testimonials.forEach(testimonial => {
+      this.translateService.get(`testimonialsContainer.${testimonial.key}.text`).subscribe({
+        next: translatedText => {
+          testimonial.text = translatedText;
+        },
+        error: err => {
+          console.error(`Error loading translation for ${testimonial.key}.text`, err);
+          testimonial.text = `Error loading text for ${testimonial.key}`;
+        }
+      });
+
+      this.translateService.get(`testimonialsContainer.${testimonial.key}.author`).subscribe({
+        next: translatedAuthor => {
+          testimonial.author = translatedAuthor;
+        },
+        error: err => {
+          console.error(`Error loading translation for ${testimonial.key}.author`, err);
+          testimonial.author = `Error loading author for ${testimonial.key}`;
+        }
+      });
+    });
+  }
 
   nextTestimonial() {
     this.currentTestimonialIndex =
@@ -39,5 +86,11 @@ export class TestimonialsComponent {
 
   get currentTestimonial() {
     return this.testimonials[this.currentTestimonialIndex];
+  }
+
+  ngOnDestroy() {
+    if (this.langChangeSubscription) {
+      this.langChangeSubscription.unsubscribe();
+    }
   }
 }

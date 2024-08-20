@@ -1,61 +1,81 @@
 #impressum {
-    color: white;
-    margin-top: 56px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 28px;
+    justify-content: center;
+    margin-left: 8px;
 
-    h2 {
-        color: #70e61c;
-        font-weight: 500;
-    }
-
-    p {
-        > a {
-            text-decoration: none;
-            color: white;
-        }
-
-        > a:hover {
-            color: #70e61c;
-        }
-    }
-
-    > button {
-        color: #141d2f;
-        font-weight: 600;
-        padding: 8px 32px;
-        border-radius: 8px;
-        cursor: pointer;
-        margin-top: 32px;
-        margin-bottom: 32px;
-        background-color: #70e61c;
-        border: 2px solid #70e61c;
-        // background-position: 50% 50%;
-        background-size: 0% 100%;
-        background-image: linear-gradient(#141d2f, #141d2f);
-        background-repeat: no-repeat;
-        transition:
-            background-size 0.5s,
-            color 0.5s;
-        width: fit-content;
-
-        > a {
-            text-decoration: none;
-            background: transparent;
-            color: #141d2f;
-        }
-    }
-
-    > button:hover {
+    .impressum-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 85%;
+        max-width: 90%;
         color: white;
-        font-weight: 700;
-        // background-position: 0% 50%;
-        background-size: 100% 100%;
+        overflow: auto;
+        padding: 26px;
+        margin-top: 72px;
+        max-width: 1920px;
 
-        a {
+        > h2 {
+            color: #70e61c;
+            margin-bottom: 16px;
+            word-break: break-word;
+        }
+
+        > h3 {
+            color: #9206bc;
+        }
+
+        > h4 {
+            color: #9206bc;
+        }
+
+        p {
+            > a {
+                text-decoration: none;
+                color: white;
+            }
+
+            > a:hover {
+                color: #70e61c;
+            }
+        }
+
+        > button {
+            color: #141d2f;
+            font-weight: 600;
+            padding: 8px 32px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 32px;
+            margin-bottom: 32px;
+            background-color: #70e61c;
+            border: 2px solid #70e61c;
+            // background-position: 50% 50%;
+            background-size: 0% 100%;
+            background-image: linear-gradient(#141d2f, #141d2f);
+            background-repeat: no-repeat;
+            transition:
+            // background-position  0.5s,
+                background-size 0.5s,
+                color 0.5s;
+            width: fit-content;
+
+            > a {
+                text-decoration: none;
+                background: transparent;
+                color: #141d2f;
+            }
+        }
+
+        > button:hover {
             color: white;
+            font-weight: 700;
+            // background-position: 0% 50%;
+            background-size: 100% 100%;
+
+            a {
+                color: white;
+            }
         }
     }
 }

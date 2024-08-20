@@ -6,14 +6,16 @@ import { MainContentComponent } from "./main-content/main-content.component";
 import { ReactiveFormsModule, FormControl } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ImpressumComponent } from './shared/components/impressum/impressum.component';
+import { PolicyComponent } from './shared/components/privacy-policy/privacy-policy.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ImpressumComponent, HeaderComponent, FooterComponent, MainContentComponent, ReactiveFormsModule, CommonModule],
+  imports: [RouterOutlet, PolicyComponent, ImpressumComponent, HeaderComponent, FooterComponent, MainContentComponent, ReactiveFormsModule, CommonModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent implements AfterViewInit {
   @ViewChild('scrollTop', { static: false }) scrollTopButton!: ElementRef;
   @ViewChild(FooterComponent, { read: ElementRef }) footer!: ElementRef;
@@ -21,7 +23,7 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit() {
     setTimeout(() => {
       this.adjustScrollButtonPosition();
-    }, 100); // 100ms delay
+    }, 100);
   }
 
   @HostListener('window:scroll', [])
@@ -57,9 +59,7 @@ export class AppComponent implements AfterViewInit {
         scrollTop.style.position = 'fixed';
         scrollTop.style.bottom = `${marginBottom}px`;
       }
-    } else {
-      console.log('Scroll button or footer component not found.');
-    }
+    } 
   }
 
   scrollToTop() {

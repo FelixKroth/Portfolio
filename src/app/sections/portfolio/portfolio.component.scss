@@ -1,24 +1,32 @@
 .portfolio-content {
     display: flex;
     flex-direction: column;
+    position: relative;
+    .background-shadow {
+        position: absolute;
+        left: 0;
+        top: 35%;
+        background: transparent;
+        height: 50%;
+        filter: opacity(0.5);
+    }
 
     > .portfolio-headline {
         display: flex;
         flex-direction: column;
-        align-items: center;
         margin: 80px 0px;
-
+        background: transparent;
         > .portfolio-headline-container {
             display: flex;
             align-items: center;
             justify-content: flex-end;
             position: relative;
-
+            background: transparent;
             > .portfolio-headline-text-container {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-
+                background: transparent;
                 > h2 {
                     font-size: 48px;
                     left: 40%;
@@ -29,7 +37,9 @@
                 > p {
                     text-align: left;
                     margin-top: 16px;
+                    margin-left: 36.5%;
                     width: 50%;
+                    background: transparent;
                 }
             }
             > .portfolio-line {
@@ -47,12 +57,14 @@
         display: flex;
         align-items: center;
         margin-bottom: 64px;
-
+        background: transparent;
         > .portfolio-image-content {
             display: flex;
             justify-content: center;
+            background: transparent;
             > .portfolio-image {
                 width: 85%;
+                background: transparent;
             }
         }
 
@@ -61,23 +73,33 @@
             flex-direction: column;
             width: 70%;
             padding: 32px 64px 32px 0px;
+            background: transparent;
+
+            > p {
+                background: transparent;
+            }
 
             > h2 {
+                background: transparent;
                 font-weight: 600;
                 font-size: 40px;
                 color: #9206bc;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
             }
 
             > h3 {
+                background: transparent;
                 font-weight: 400;
                 font-size: 20px;
                 color: #70e61c;
                 margin-bottom: 32px;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
             }
 
             > .portfolio-text-content-button-container {
                 display: flex;
                 gap: 16px;
+                background: transparent;
                 > button:first-child {
                     color: #141d2f;
                     font-weight: 600;
@@ -139,12 +161,14 @@
         align-items: center;
         flex-direction: row-reverse;
         margin-bottom: 64px;
-
+        background: transparent;
         > .portfolio-image-content {
             display: flex;
             justify-content: center;
+            background: transparent;
             > .portfolio-image {
                 width: 85%;
+                background: transparent;
             }
         }
 
@@ -152,12 +176,19 @@
             display: flex;
             flex-direction: column;
             width: 70%;
-            padding: 32px 0px 32px 64px;
+            padding: 32px 0px 32px 100px;
+            background: transparent;
+
+            > p {
+                background: transparent;
+            }
 
             > h2 {
                 font-weight: 600;
                 font-size: 40px;
                 color: #9206bc;
+                background: transparent;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
             }
 
             > h3 {
@@ -165,11 +196,15 @@
                 font-size: 20px;
                 color: #70e61c;
                 margin-bottom: 32px;
+                background: transparent;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
             }
 
             > .portfolio-text-content-button-container {
                 display: flex;
                 gap: 16px;
+                background: transparent;
+
                 > button:first-child {
                     color: #141d2f;
                     font-weight: 600;

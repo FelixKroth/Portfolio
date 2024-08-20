@@ -5,7 +5,122 @@
     "contact": "Kontakt",
     "imprint": "Impressum",
     "language": {
-      "english": "Englisch",
-      "german": "Deutsch"
-    }
-  }
+        "english": "Englisch",
+        "german": "Deutsch"
+    },
+    "intro": {
+        "am": "I AM",
+        "name": "FELIX KROTH",
+        "profession": "FRONTEND DEVELOPER",
+        "letsTalk": "KONTAKT AUFNEHMEN"
+    },
+    "contactHeader": {
+        "githubAlt": "Github-Icon",
+        "mailAlt": "Mail-Icon",
+        "linkedInAlt": "LinkedIn-Icon",
+        "scrollDown": "WEITER SCROLLEN",
+        "scrollDownAlt": "Scrollen nach unten Pfeil"
+    },
+    "aboutContent": {
+        "title": "ÜBER MICH",
+        "description": "Ich bin ein leidenschaftlicher Frontend-Entwickler mit einem starken Fokus auf moderne Webtechnologien. Es begeistert mich, ansprechende und benutzerfreundliche Anwendungen zu schaffen, die eine nahtlose digitale Erfahrung bieten.",
+        "category1": "Frontend-Entwicklung",
+        "category1Text": "Meine Expertise liegt in der Erstellung von responsiven, effizienten und visuell ansprechenden Benutzeroberflächen. Dabei nutze ich moderne Frameworks und Tools, um sicherzustellen, dass jedes Projekt in Bezug auf Leistung und Barrierefreiheit auf allen Geräten optimiert ist.",
+        "category2": "Benutzerzentrierte Designs",
+        "category2Text": "Ich bin überzeugt, dass großartiges Design mit einem tiefen Verständnis für die Bedürfnisse der Benutzer beginnt. Deshalb steht die Benutzererfahrung bei mir in jedem Schritt des Entwicklungsprozesses im Mittelpunkt. So stelle ich sicher, dass das Endprodukt nicht nur funktional, sondern auch intuitiv und angenehm zu nutzen ist."
+    },
+    "skillsContent": {
+        "angular": "ANGULAR",
+        "api": "API",
+        "css": "CSS",
+        "firebase": "FIREBASE",
+        "git": "GIT",
+        "html5": "HTML5",
+        "javascript": "JAVASCRIPT",
+        "materialdesign": "MATERIAL DESIGN",
+        "scrum": "SCRUM",
+        "typescript": "TYPESCRIPT",
+        "learning": "CONTINUALLY LEARNING",
+        "creativecloud": "CREATIVE CLOUD",
+        "cinema4d": "CINEMA 4D",
+        "blender": "BLENDER",
+        "corona": "CORONA",
+        "octane": "OCTANE"
+    },
+    "skillsText": {
+        "headline": "FÄHIGKEITEN",
+        "description": "Ich habe eine solide Grundlage in der modernen Webentwicklung und Erfahrung in JavaScript, TypeScript und Angular. Ich arbeite gerne an der Erstellung dynamischer, benutzerorientierter Anwendungen unter Verwendung von HTML5, CSS/SCSS und Tools wie Firebase zur Backend-Integration. Außerdem habe ich Erfahrung im Umgang mit APIs, um nahtlose Verbindungen zwischen Frontend-Oberflächen und Backend-Services zu schaffen.",
+        "button_text": "KONTAKT AUFNEHMEN",
+        "subline": "SIE SUCHEN NACH EINER ANDEREN QUALIFIKATION?",
+        "sublineText": "Nehmen Sie Kontakt mit mir auf. Ich freue mich darauf, mein Wissen zu erweitern und wäre besonders daran interessiert, meine Fähigkeiten in Vue JS und React zu vertiefen."
+    },
+    "portfolioContent": {
+        "headline": "PORTFOLIO",
+        "description": "Willkommen in meinem Portfolio! Hier finden Sie eine Auswahl an Projekten, die meinen Weg als Frontend-Entwickler zeigen. Jedes Projekt spiegelt die Fähigkeiten wider, die ich erworben habe, und mein Engagement für die Entwicklung ansprechender, benutzerfreundlicher Webanwendungen.",
+        "pokedex": {
+            "title": "POKEDEX",
+            "subtitle": "JAVASCRIPT | HTML | CSS | API",
+            "description": "Ein interaktives Projekt zur Darstellung von Pokémon-Daten mithilfe einer API.",
+            "button_live_test": "LIVE TEST",
+            "button_github": "GIT HUB"
+        },
+        "join": {
+            "title": "JOIN",
+            "subtitle": "JAVASCRIPT | HTML | CSS | FIREBASE",
+            "description": "Ein Task-Management-Tool, das die Zusammenarbeit in Teams erleichtert.",
+            "button_live_test": "LIVE TEST",
+            "button_github": "GIT HUB"
+        },
+        "el_pollo_loco": {
+            "title": "EL POLLO LOCO",
+            "subtitle": "JAVASCRIPT | HTML | CSS | OBJECT ORIENTIERUNG",
+            "description": "Ein Spielprojekt, das grundlegende Konzepte der objektorientierten Programmierung verdeutlicht.",
+            "button_live_test": "LIVE TEST",
+            "button_github": "GIT HUB"
+        },
+        "portfolio": {
+            "title": "PORTFOLIO",
+            "subtitle": "ANGULAR | TYPESCRIPT | HTML | CSS | HOSTING",
+            "description": "Diese Website dient als Portfolio und zeigt meine Fähigkeiten in Angular und Webentwicklung.",
+            "button_live_test": "LIVE TEST",
+            "button_github": "GIT HUB"
+        }
+    },
+    "testimonialsContent": {
+        "headline": "REFERENZEN",
+        "description": "Was andere über meine Arbeit sagen.",
+        "quotation_marks_alt": "Anführungszeichen",
+        "testimonial_image_alt": "REFERENZEN Bild"
+    },
+    "testimonialsContainer": {
+        "testimonial1": {
+            "text": "Felix ist ein talentierter Entwickler, der stets qualitativ hochwertige Arbeit liefert.",
+            "author": "John Doe"
+        },
+        "testimonial2": {
+            "text": "Ich habe Felix als engagierten und kreativen Entwickler kennengelernt.",
+            "author": "Jane Smith"
+        },
+        "testimonial3": {
+            "text": "Seine Fähigkeit, komplexe Probleme zu lösen, hat mich sehr beeindruckt.",
+            "author": "Michael Johnson"
+        }
+    },
+    "contactContent": {
+        "headline": "KONTAKT",
+        "description": "Ich freue mich darauf, von Ihnen zu hören. Lassen Sie uns über Ihr nächstes Projekt sprechen.",
+        "placeholder_name": "Ihr Name",
+        "placeholder_email": "Ihre E-Mail",
+        "placeholder_message": "Ihre Nachricht",
+        "submit_button": "NACHRICHT SENDEN",
+        "success_message": "Ihre Nachricht wurde erfolgreich gesendet!",
+        "error_name": "Bitte füllen Sie dieses Feld aus, bevor Sie die Nachricht senden.",
+        "error_email": "Bitte füllen Sie dieses Feld aus, bevor Sie die Nachricht senden.",
+        "error_message": "Bitte füllen Sie dieses Feld aus, bevor Sie die Nachricht senden.",
+        "error_message_submission": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte stellen Sie sicher, dass alle Felder korrekt ausgefüllt sind.",
+        "checkboxText1": "Ich habe die ",
+        "checkboxPrivacy": "Datenschutzerklärung",
+        "checkboxText2": " gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
+    },
+    "footerImprint": "IMPRESSUM"
+}

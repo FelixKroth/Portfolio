@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
   templateUrl: './impressum.component.html',
   styleUrl: './impressum.component.scss'
 })
+
 export class ImpressumComponent {
 
 }

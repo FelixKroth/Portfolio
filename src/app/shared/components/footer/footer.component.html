@@ -1,17 +1,41 @@
 <div class="footer-content">
-    <footer id="footer">
-        <section class="footer-logo">
-            <h2 routerLink='/'><span>FELI<span>X</span></span></h2>
-        </section>
-        <section class="impressum-datenschutz">
-            <div id="impressum-file"><a routerLink='/impressum'>IMPRESSUM</a></div>
-            <div id="seperator-footer"></div>
-            <div id="datenschutz-file"><a routerLink='/'>© FELIX KROTH</a></div>
-        </section>
-        <section class="socialmedia">
-            <a href='https://github.com/' target="_blank"><img src="../assets/img/github-icon.png" id="github-icon-footer" alt="github-icon"></a>
-            <a href="mailto:felix_kroth@web.de" target="_blank"><img src="../assets/img/mail-icon.png" id="mail-icon" alt="mail-icon"></a>
-            <a href='https://linkedin.com/' target="_blank"><img src="../assets/img/linkedIn-icon.png" id="linkedIn-icon" alt="linkedIn-icon"></a>
-        </section>
-    </footer>
+  <footer id="footer">
+    <section class="footer-logo">
+      <h2 style="font-weight: 400; cursor: pointer">
+        <a style="text-decoration: none; color: #9206bc" routerLink="/"
+          >[<span style="font-weight: 700; color: white"
+            >F<span style="color: #70e61c; font-weight: 700">K</span></span
+          >]</a
+        >
+      </h2>
+    </section>
+    <section class="impressum-datenschutz">
+      <div id="impressum-file">
+        <a routerLink="/impressum">{{ "footerImprint" | translate }}</a>
+      </div>
+      <div id="seperator-footer"></div>
+      <div id="datenschutz-file">
+        <a routerLink="/privacy-policy">© FELIX KROTH</a>
+      </div>
+    </section>
+    <section class="socialmedia">
+      <a href="https://github.com/FelixKroth" target="_blank"
+        ><img
+          src="../assets/img/github-icon.png"
+          id="github-icon-footer"
+          alt="github-icon"
+      /></a>
+      <a href="mailto:felix_kroth@web.de" target="_blank"
+        ><img src="../assets/img/mail-icon.png" id="mail-icon" alt="mail-icon"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/felix-kroth-20755b190/"
+        target="_blank"
+        ><img
+          src="../assets/img/linkedIn-icon.png"
+          id="linkedIn-icon"
+          alt="linkedIn-icon"
+      /></a>
+    </section>
+  </footer>
 </div>

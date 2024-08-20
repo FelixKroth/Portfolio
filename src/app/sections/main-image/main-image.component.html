@@ -1,29 +1,58 @@
 <div class="header-container">
-
   <section class="header-intro" data-aos="fade-up" data-aos-duration="1800">
     <div class="wording">
-      <div class="wording-intro">
-        <p>I AM</p>
-      </div>
+      <span class="wording-intro">
+        {{ "intro.am" | translate }}
+      </span>
       <div class="wording-container">
-        <h1 class="wording-headline">FELIX KROTH</h1>
-        <span class="wording-subline">FRONTEND DEVELOPER</span>
+        <h1 class="wording-headline">{{ "intro.name" | translate }}</h1>
+        <span class="wording-subline">{{
+          "intro.profession" | translate
+        }}</span>
       </div>
     </div>
-    <button (click)="scrollToSection('contact')">LET'S TALK</button>
+    <button (click)="scrollToSection('contact')">
+      {{ "intro.letsTalk" | translate }}
+    </button>
   </section>
 
-  <section class="header-contact" data-aos="fade-right" data-aos-duration="1800">
+  <section
+    class="header-contact"
+    data-aos="fade-right"
+    data-aos-duration="1800"
+  >
     <div class="header-contact-container">
-        <div class="line"></div>
-        <div class="contact-icons">
-            <a href='https://github.com/' target="'_blank'"><img src="../assets/img/github-icon.png" id="github-icon" alt="Github Icon"></a>
-            <a href="mailto:felix_kroth@web.de" target="'_blank'"><img src="../assets/img/mail-icon.png" id="mail-icon" alt="Mail Icon"></a>
-            <a href='https://linkedin.com/' target="'_blank'"><img src="../assets/img/linkedIn-icon.png" id="linkedIn-icon" alt="LinkedIn Icon"></a>
-        </div>
-        <a href="mailto:felix_kroth@web.de">felix_kroth&#64;web.de</a>
+      <div class="line"></div>
+      <div class="contact-icons">
+        <a href="https://github.com/FelixKroth" target="'_blank'"
+          ><img
+            src="../assets/img/github-icon.png"
+            id="github-icon"
+            alt="{{ 'contactHeader.githubAlt' | translate }}"
+        /></a>
+        <a href="mailto:contact@felix-kroth.de" target="'_blank'"
+          ><img
+            src="../assets/img/mail-icon.png"
+            id="mail-icon"
+            alt="{{ 'contactHeader.mailAlt' | translate }}"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/felix-kroth-20755b190/"
+          target="'_blank'"
+          ><img
+            src="../assets/img/linkedIn-icon.png"
+            id="linkedIn-icon"
+            alt="{{ 'contactHeader.linkedInAlt' | translate }}"
+        /></a>
+      </div>
+      <a href="mailto:contact@felix-krtoh.de">contact&#64;felix-kroth.de</a>
     </div>
-    <div class="scroll-down" (click)="scrollToSection('about')"><span>SCROLL DOWN<img src="../assets/img/arrow-down-line.svg" alt=""></span></div>
+    <span class="scroll-down" (click)="scrollToSection('about')">
+      {{ "contactHeader.scrollDown" | translate }}
+      <img
+        src="../assets/img/arrow-down-line.svg"
+        alt="{{ 'contactHeader.scrollDownAlt' | translate }}"
+      />
+    </span>
   </section>
-
 </div>

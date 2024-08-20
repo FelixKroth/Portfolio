@@ -1,7 +1,7 @@
 .skills-content {
     display: flex;
     align-items: flex-start;
-
+    margin: 128px 0px 64px 0px;
     > .skills-image-content {
         display: flex;
         width: 60%;
@@ -14,19 +14,29 @@
             align-items: center;
             flex-wrap: wrap;
             gap: 16px;
-            > svg {
+            position: relative;
+
+            .background-shadow {
+                position: absolute;
+                left: -250px;
+                bottom: 15%;
                 background: transparent;
+                height: 85%;
             }
+
             > .skills-icons-container {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                background: transparent;
+
                 > svg {
                     background: transparent;
                 }
 
                 > span {
                     text-align: center;
+                    background: transparent;
                 }
 
                 @keyframes rotateAnimation {
@@ -75,6 +85,7 @@
         > p {
             background: transparent;
             padding-right: 64px;
+            margin-top: 16px;
         }
         > .skills-button-container {
             display: flex;

@@ -1,15 +1,13 @@
 <section class="contact-content">
   <div class="contact-headline-container" data-aos="fade-right" data-aos-duration="1800">
     <div class="contact-line"></div>
-    <h2>CONTACT</h2>
+    <h2>{{ "contactContent.headline" | translate }}</h2>
   </div>
 
   <div class="contact-content-container">
     <div class="contact-text-content" data-aos="fade-right" data-aos-duration="1800">
       <p>
-        What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
-        printer took a galley of type and scrambled it to make a type specimen book.
+        {{ "contactContent.description" | translate }}
       </p>
     </div>
 
@@ -19,45 +17,89 @@
           <input
             formControlName="name"
             type="text"
-            placeholder="Your name"
+            [placeholder]="'contactContent.placeholder_name' | translate"
             required
           />
-          <div *ngIf="formControls.name.invalid && formControls.name.touched" class="error-message-inputs" data-aos="fade-up" data-aos-duration="500">
-            Please fill out this field before sending the message.
+          <div
+            *ngIf="formControls.name.invalid && formControls.name.touched"
+            class="error-message-inputs"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            {{ "contactContent.error_name" | translate }}
           </div>
 
           <input
             formControlName="email"
             type="email"
-            placeholder="Your email"
+            [placeholder]="'contactContent.placeholder_email' | translate"
             required
           />
-          <div *ngIf="formControls.email.invalid && formControls.email.touched" class="error-message-inputs" data-aos="fade-up" data-aos-duration="500">
-            Please fill out this field before sending the message.
+          <div
+            *ngIf="formControls.email.invalid && formControls.email.touched"
+            class="error-message-inputs"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            {{ "contactContent.error_email" | translate }}
           </div>
 
           <textarea
             formControlName="message"
-            placeholder="Your message"
+            [placeholder]="'contactContent.placeholder_message' | translate"
             required
           ></textarea>
-          <div *ngIf="formControls.message.invalid && formControls.message.touched" class="error-message-inputs" data-aos="fade-up" data-aos-duration="500">
-            Please fill out this field before sending the message.
+          <div
+            *ngIf="formControls.message.invalid && formControls.message.touched"
+            class="error-message-inputs"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            {{ "contactContent.error_message" | translate }}
+          </div>
+
+          <div class="privacy-policy-checkbox">
+            <input
+              type="checkbox"
+              formControlName="checkbox"
+            />
+            <p>
+              {{ "contactContent.checkboxText1" | translate }}
+              <a routerLink='/privacy-policy'>{{ "contactContent.checkboxPrivacy" | translate }}</a>
+              {{ "contactContent.checkboxText2" | translate }}
+            </p>
           </div>
         </div>
 
         <div class="contact-form-button-container">
-          <button type="submit" [disabled]="contactForm.invalid" [ngClass]="{'disabled': contactForm.invalid}">SEND MESSAGE</button>
+          <button
+            type="submit"
+            [disabled]="isFormInvalid"
+            [ngClass]="{ disabled: isFormInvalid }"
+          >
+            {{ "contactContent.submit_button" | translate }}
+          </button>
         </div>
       </form>
 
       <!-- Success or Error Message -->
-      <div *ngIf="messageSent" class="success-message" data-aos="fade-up" data-aos-duration="1800">
-        Your message has been sent successfully!
+      <div
+        *ngIf="messageSent"
+        class="success-message"
+        data-aos="fade-up"
+        data-aos-duration="1800"
+      >
+        {{ "contactContent.success_message" | translate }}
       </div>
-      <div *ngIf="submissionError && isFormInvalid" class="error-message" data-aos="fade-up" data-aos-duration="1800">
-        There was an error sending your message. Please ensure all fields are filled out correctly.
+      <div
+        *ngIf="submissionError && isFormInvalid"
+        class="error-message"
+        data-aos="fade-up"
+        data-aos-duration="1800"
+      >
+        {{ "contactContent.error_message_submission" | translate }}
       </div>
     </div>
   </div>
+  <img src="/assets/img/shadows/shadow_green_02.png" alt="Background shadow" class="background-shadow" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1800">
 </section>

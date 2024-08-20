@@ -1,13 +1,16 @@
 .header-container {
-    background: url("/assets/img/HERO-BG.svg"); 
-    background-repeat: no-repeat;
-    background-position: bottom 75% left 0%;
-    background-size: cover;
+    background: url(/assets/img/HERO-BG.svg), url(/assets/img/main-image.png),
+        url(/assets/img/shadows/shadow_green_02.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position:
+        center top -15%,
+        left top 25%,
+        left top 20%;
+    background-size: cover, 50%, 45%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 
     > .header-intro {
         display: flex;
@@ -16,61 +19,70 @@
         justify-content: center;
         margin-top: 16%;
         background-color: transparent;
+        padding: 0 16px;
 
         > button {
-                color: #141d2f;
-                font-weight: 600;
-                padding: 8px 32px;
-                border-radius: 8px;
-                cursor: pointer;
-                margin-top: 32px;
-                background-color: #70e61c;
-                border: 2px solid #70e61c;
-                // background-position: 50% 50%;
-                background-size: 0% 100%;
-                background-image: linear-gradient(#202B40, #202B40);
-                background-repeat: no-repeat;
-                transition: background-size 0.5s, color 0.5s;
-                width: fit-content;
+            color: #141d2f;
+            font-weight: 600;
+            padding: 8px 32px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 32px;
+            background-color: #70e61c;
+            border: 2px solid #70e61c;
+            background-size: 0% 100%;
+            background-image: linear-gradient(#202b40, #202b40);
+            background-repeat: no-repeat;
+            transition:
+                background-size 0.5s,
+                color 0.5s;
+            width: fit-content;
+            white-space: nowrap;
+            overflow-wrap: break-word;
         }
 
         > button:hover {
-                color: white;
-                font-weight: 700;
-                // background-position: 0% 50%;
-                background-size: 100% 100%;
+            color: white;
+            font-weight: 700;
+            background-size: 100% 100%;
         }
 
         > .wording {
             display: flex;
             align-items: center;
             background-color: transparent;
+
             > .wording-intro {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: transparent;
+                margin-top: 10px;
+                margin-right: -10px;
+                transform: rotate(-90deg);
+                font-weight: 200;
+                font-size: 58px;
                 background-color: transparent;
-                > p {
-                    transform: rotate(-90deg);
-                    font-weight: 200;
-                    font-size: 56px;
-                    margin-top: 10px;
-                    margin-right: -10px;
-                    background-color: transparent;
-                }
             }
+
             > .wording-container {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 background-color: transparent;
+
                 > h1 {
                     font-size: 72px;
                     background-color: transparent;
+                    text-align: left;
                 }
 
                 > span {
                     background-color: transparent;
-                    font-size: 38px;
+                    font-size: 40px;
                     color: #9206bc;
                     margin-top: -16px;
+                    text-align: left;
                 }
             }
         }
@@ -82,7 +94,8 @@
         justify-content: space-between;
         background-color: transparent;
         height: 150px;
-        margin-bottom: 2%;
+        margin-bottom: 3%;
+        z-index: 99;
 
         > .header-contact-container {
             display: flex;
@@ -102,41 +115,67 @@
                 color: white;
                 margin-left: 16px;
                 background-color: transparent;
+                white-space: nowrap;
+                overflow-wrap: break-word;
+                &:hover {
+                    color: #70e61c;
+                }
             }
+
             > .contact-icons {
                 display: flex;
                 background-color: transparent;
                 > a {
                     background-color: transparent;
+
                     > img {
                         width: 40px;
                         height: 40px;
                         margin-left: 16px;
                         background: transparent;
+                        transition:
+                            transform 0.3s,
+                            filter 0.3s;
                     }
 
-                    > img:hover {
+                    &:hover {
                         transform: scale(1.15);
-                        filter: drop-shadow(2px 2px 6px 10px #70e61c);
+                        fill-opacity: #70e61c;
                     }
                 }
             }
         }
 
+        @keyframes opacityAnimation {
+            from {
+                visibility: hidden;
+                opacity: 0;
+            }
+            to {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
         > .scroll-down {
+            display: flex;
+            align-items: center;
+            gap: 8px;
             background-color: transparent;
             cursor: pointer;
-            > span {
-                transform: rotate(90deg);
-                display: flex;
-                align-items: center;
-                gap: 8px;
+            transform: rotate(90deg);
+            font-size: 14px;
+            margin-right: -48px;
+            width: 170px;
+            animation: opacityAnimation 5s ease-out;
+            
+            &:hover {
+                color: #9206bc;
+            }
+
+            > img {
                 background-color: transparent;
-                margin-right: -32px;
-                > img {
-                    background-color: transparent;
-                    transform: rotate(-90deg);
-                }
+                transform: rotate(-90deg);
             }
         }
     }

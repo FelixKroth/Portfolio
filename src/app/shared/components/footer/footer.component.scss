@@ -4,9 +4,12 @@
     align-items: center;
     border-top: 2px solid #70e61c;
     height: 100px;
+    // position: fixed;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
 
     > #footer {
-        height: 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -15,6 +18,8 @@
         padding: 0px 24px;
 
         > .footer-logo {
+            display: flex;
+            justify-content: center;
             color: white;
             cursor: pointer;
 

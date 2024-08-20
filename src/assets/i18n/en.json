@@ -4,8 +4,140 @@
     "portfolio": "Portfolio",
     "contact": "Contact",
     "imprint": "Imprint",
-    "language": {
-      "english": "English",
-      "german": "German"
-    }
-  }
+    "language": 
+    {
+        "english": "English",
+        "german": "German"
+    },
+    "intro": 
+    {
+        "am": "I AM",
+        "name": "FELIX KROTH",
+        "profession": "FRONTEND DEVELOPER",
+        "letsTalk": "LET'S TALK"
+    },
+    "contactHeader": 
+    {
+        "githubAlt": "Github-Icon",
+        "mailAlt": "Mail-Icon",
+        "linkedInAlt": "LinkedIn-Icon",
+        "scrollDown": "SCROLL DOWN",
+        "scrollDownAlt": "Scroll down arrow"
+    },
+    "aboutContent": 
+    {
+        "title": "ABOUT ME",
+        "description": "I am a passionate frontend developer with a deep commitment to creating dynamic, user-friendly applications using the latest web technologies. My goal is to transform ideas into seamless digital experiences that resonate with users.",
+        "category1": "Frontend Development",
+        "category1Text": "My expertise lies in building responsive, efficient, and visually appealing interfaces. I leverage modern frameworks and tools to ensure that every project is optimized for performance and accessibility across all devices.",
+        "category2": "User-Centered Designs",
+        "category2Text": "I believe that great design starts with understanding the user's needs. I prioritize user experience in every step of the development process, ensuring that the end product is not only functional but also intuitive and enjoyable to use."
+    },
+    "skillsContent": 
+    {
+        "angular": "ANGULAR",
+        "api": "API",
+        "css": "CSS",
+        "firebase": "FIREBASE",
+        "git": "GIT",
+        "html5": "HTML5",
+        "javascript": "JAVASCRIPT",
+        "materialdesign": "MATERIAL DESIGN",
+        "scrum": "SCRUM",
+        "typescript": "TYPESCRIPT",
+        "learning": "CONTINUALLY LEARNING",
+        "creativecloud": "CREATIVE CLOUD",
+        "cinema4d": "CINEMA 4D",
+        "blender": "BLENDER",
+        "corona": "CORONA",
+        "octane": "OCTANE"
+    },
+    "skillsText": 
+    {
+        "headline": "SKILLS",
+        "description": "I have a solid foundation in modern web development, with experience in JavaScript, TypeScript, and Angular. I enjoy building dynamic, user-focused applications using HTML5, CSS/SCSS, and tools like Firebase for backend integration. I also have experience working with APIs to create seamless connections between front-end interfaces and backend services.",
+        "button_text": "GET IN TOUCH",
+        "subline": "LOOKING FOR ANOTHER SKILL?",
+        "sublineText": "Feel free to contact me. I look forward to expanding my knowledge and would be especially interested in advancing my skills with Vue JS and React."
+    },
+    "portfolioContent": 
+    {
+        "headline": "PORTFOLIO",
+        "description": "Welcome to my portfolio! Here, you'll find a collection of projects that showcase my journey as a frontend developer. Each project reflects the skills I've acquired and my commitment to creating engaging, user-friendly web applications.",
+        "pokedex": 
+        {
+            "title": "POKEDEX",
+            "subtitle": "JAVASCRIPT | HTML | CSS | API",
+            "description": "An interactive project displaying Pokémon data using an API.",
+            "button_live_test": "LIVE TEST",
+            "button_github": "GIT HUB"
+        },
+        "join": 
+        {
+            "title": "JOIN",
+            "subtitle": "JAVASCRIPT | HTML | CSS | FIREBASE",
+            "description": "A task management tool that facilitates team collaboration.",
+            "button_live_test": "LIVE TEST",
+            "button_github": "GIT HUB"
+        },
+        "el_pollo_loco": 
+        {
+            "title": "EL POLLO LOCO",
+            "subtitle": "JAVASCRIPT | HTML | CSS | OBJECT ORIENTATION",
+            "description": "A game project that illustrates basic concepts of object-oriented programming.",
+            "button_live_test": "LIVE TEST",
+            "button_github": "GIT HUB"
+        },
+        "portfolio": 
+        {
+            "title": "PORTFOLIO",
+            "subtitle": "ANGULAR | TYPESCRIPT | HTML | CSS | HOSTING",
+            "description": "This website serves as a portfolio and showcases my skills in Angular and web development.",
+            "button_live_test": "LIVE TEST",
+            "button_github": "GIT HUB"
+        }
+    },
+    "testimonialsContent": 
+    {
+        "headline": "TESTIMONIALS",
+        "description": "What others say about my work.",
+        "quotation_marks_alt": "Quotation marks",
+        "testimonial_image_alt": "Testimonial image"
+    },
+    "testimonialsContainer": 
+    {
+        "testimonial1": 
+        {
+            "text": "Felix is a talented developer who consistently delivers high-quality work.",
+            "author": "John Doe"
+        },
+        "testimonial2": 
+        {
+            "text": "I've known Felix as a dedicated and creative developer.",
+            "author": "Jane Smith"
+        },
+        "testimonial3": 
+        {
+            "text": "His ability to solve complex problems has greatly impressed me.",
+            "author": "Michael Johnson"
+        }
+    },
+    "contactContent": 
+    {
+        "headline": "CONTACT",
+        "description": "I'm looking forward to hearing from you. Let's discuss your next project.",
+        "placeholder_name": "Your Name",
+        "placeholder_email": "Your Email",
+        "placeholder_message": "Your Message",
+        "submit_button": "SEND MESSAGE",
+        "success_message": "Your message has been successfully sent!",
+        "error_name": "Please fill out this field before sending the message.",
+        "error_email": "Please fill out this field before sending the message.",
+        "error_message": "Please fill out this field before sending the message.",
+        "error_message_submission": "An error occurred while sending your message. Please make sure all fields are correctly filled out.",
+        "checkboxText1": "I have read the ",
+        "checkboxPrivacy": "privacy policy",
+        "checkboxText2": " and agree to the processing of my data as described."
+    },
+    "footerImprint": "IMPRINT"
+}

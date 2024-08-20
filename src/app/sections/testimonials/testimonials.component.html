@@ -7,15 +7,15 @@
     <div class="testimonials-headline-container">
       <div class="testimonials-line"></div>
       <div class="testimonials-headline-text-container">
-        <h2>TESTIMONIALS</h2>
+        <h2>{{ 'testimonialsContent.headline' | translate }}</h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, sunt.
+          {{ 'testimonialsContent.description' | translate }}
         </p>
       </div>
     </div>
   </section>
 
-  
+  <img src="/assets/img/shadows/shadow_blue_01.png" alt="Background shadow" class="background-shadow" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1800">
 
   <div class="carousel-container" data-aos="fade-up" data-aos-duration="1800">
     <img
@@ -24,21 +24,18 @@
       alt="Quotation Marks"
     />
 
-    <div style = "display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between;">
-    <div class="testimonial-text-content">
-      <p>{{ currentTestimonial.text }}</p>
-    </div>
-    <div class="testimonial-navigation">
-      <button (click)="previousTestimonial()">&#10094;</button>
-      <button (click)="nextTestimonial()">&#10095;</button>
-    </div>
+    <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; background: transparent;">
+      <div class="testimonial-text-content" style="display: flex; flex-direction: column; background: transparent;">
+        <h3 style="color: #70e61c; margin-bottom: 8px; background: transparent;">{{ currentTestimonial.author }}</h3>
+        <p style="background: transparent;">{{ currentTestimonial.text }}</p>
+      </div>
+      <div class="testimonial-navigation">
+        <button (click)="previousTestimonial()">&#10094;</button>
+        <button (click)="nextTestimonial()">&#10095;</button>
+      </div>
     </div>
     <div class="testimonial-image-content">
       <img [src]="currentTestimonial.image" alt="Testimonial Image" />
     </div>
-    
   </div>
-  
-  
-
 </section>
