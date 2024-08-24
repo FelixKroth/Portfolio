@@ -37,15 +37,15 @@
 .contact-content {
   display: flex;
   flex-direction: column;
-  margin: 84px 0px 160px 0px;
+  margin: 64px 0px 64px 0px;
   position: relative;
 
   .background-shadow {
     position: absolute;
-    left: -15%;
+    left: -10%;
     top: 25%;
     background: transparent;
-    width: 50%;
+    height: 95%;
   }
 
   .contact-headline-container {

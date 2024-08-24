@@ -2,8 +2,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 128px;
-    > .about-text-content {
+    margin-top: 64px;
+    position: relative;
+    .background-shadow {
+        position: absolute;
+        right: -10%;
+        top: -5%;
+        z-index: 1;
+        background-color: transparent;
+        height: 55%;
+        transform: rotate(-10deg);
+    }
+
+    .about-text-content {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -29,28 +40,18 @@
                 display: flex;
                 flex-direction: column;
             }
-            
+
             h3 {
                 width: 80%;
                 word-break: break-word;
-                color:#9206bc;
+                color: #9206bc;
             }
         }
     }
 
-    > .profile-image-content {
+    .profile-image-content {
         width: 50%;
         position: relative;
-
-        .background-shadow {
-            position: absolute;
-            right: -200px;
-            top: -300px;
-            z-index: -1;
-            background-color: transparent;
-            height: 500px;
-            transform: rotate(-25deg);
-        }
 
         > .profile-image {
             display: flex;

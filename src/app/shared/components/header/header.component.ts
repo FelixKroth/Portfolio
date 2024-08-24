@@ -1,4 +1,10 @@
-import { Component, ElementRef, Renderer2, OnDestroy, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  Renderer2,
+  OnDestroy,
+  ViewChild,
+} from '@angular/core';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { TranslationService } from '../../../translation.service';
 import { TranslateModule } from '@ngx-translate/core';
@@ -24,7 +30,6 @@ export class HeaderComponent implements OnDestroy {
     private elementRef: ElementRef,
     private router: Router
   ) {
-
     const savedLang = localStorage.getItem('selectedLang');
     if (savedLang) {
       this.translateService.switchLanguage(savedLang);
@@ -32,15 +37,20 @@ export class HeaderComponent implements OnDestroy {
       this.translateService.switchLanguage('en');
     }
 
-    this.globalClickListener = this.renderer.listen('document', 'click', (event: Event) => {
-      this.handleOutsideClick(event);
-    });
+    this.globalClickListener = this.renderer.listen(
+      'document',
+      'click',
+      (event: Event) => {
+        this.handleOutsideClick(event);
+      }
+    );
 
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {
         if (this.sectionToScroll) {
           this.scrollToSectionOnPage(this.sectionToScroll);
+          console.log(this.sectionToScroll, 'scroll to section works');
         }
       });
   }
@@ -68,21 +78,19 @@ export class HeaderComponent implements OnDestroy {
     this.isDropdownOpen = false;
   }
 
-  private scrollToSectionOnPage(section: string) {
-    const element = document.getElementById(section);
-    if (element) {
-      const sectionHeight = element.offsetHeight;
-      const viewportHeight = window.innerHeight;
-
-      if (sectionHeight < viewportHeight) {
-        const offsetTop = element.offsetTop - ((viewportHeight - sectionHeight) / 2);
-        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
-      } else {
-        element.scrollIntoView({ behavior: 'smooth' });
+  public scrollToSectionOnPage(section: string) {
+    setTimeout(() => {
+      const element = document.getElementById(section);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        this.sectionToScroll = null;
       }
 
-      this.sectionToScroll = null;
-    }
+      if (this.router.url !== '/') {
+        this.sectionToScroll = section;
+        this.router.navigate(['/']);
+      }
+    }, 0);
   }
 
   handleOutsideClick(event: Event) {

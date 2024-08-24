@@ -3,21 +3,23 @@
         url(/assets/img/shadows/shadow_green_02.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position:
-        center top -15%,
-        left top 25%,
-        left top 20%;
-    background-size: cover, 50%, 45%;
+    center top -15%,
+    left -10% top 20%,
+    left -80% top 15%;
+    background-size: cover, 55%, 90%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    .spacer {
+        height: 80px;
+        background: transparent;
+    }
     > .header-intro {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 16%;
         background-color: transparent;
         padding: 0 16px;
 
@@ -38,7 +40,7 @@
                 color 0.5s;
             width: fit-content;
             white-space: nowrap;
-            overflow-wrap: break-word;
+            
         }
 
         > button:hover {
@@ -116,7 +118,8 @@
                 margin-left: 16px;
                 background-color: transparent;
                 white-space: nowrap;
-                overflow-wrap: break-word;
+                
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
                 &:hover {
                     color: #70e61c;
                 }
@@ -168,7 +171,7 @@
             margin-right: -48px;
             width: 170px;
             animation: opacityAnimation 5s ease-out;
-            
+
             &:hover {
                 color: #9206bc;
             }

@@ -107,20 +107,34 @@
     }
 }
 
-@media screen and (min-height: 1920px) {
-    #impressum {
-        height: 95vh !important;
-    }
-
-    #privacy-main {
-        height: 95vh !important;
+@media screen and (min-width: 1920px) {
+    #main-content {
+        overflow-x: visible !important;
+        overflow-y: visible !important;
     }
 }
 
 @media screen and (min-width: 1921px) {
-    #main-content {
-        overflow: visible !important;
-        overflow-y: clip !important;
+    #scroll-to-top {
+        right: calc(1920px - 32px);
+    }
+
+    #impressum {
+        justify-content: center !important;
+        margin-left: 8px !important;
+    }
+
+    #privacy-main {
+        justify-content: center !important;
+        margin-left: 8px !important;
+    }
+
+    .header-container {
+        background-position:
+            center top -15%,
+            left -5% top 20%,
+            left 0% top 20% !important;
+        background-size: cover, 55%, 50% !important;
     }
 }
 
@@ -130,7 +144,27 @@
     }
 }
 
-@media screen and (max-width: 1820px) {
+@media screen and (max-height: 959px) {
+    .header-container {
+        background-position:
+            center top 10%,
+            left -5% bottom 65%,
+            left -10% top -5% !important;
+        background-size: cover, 40%, 50% !important;
+    }
+}
+
+@media screen and (max-width: 1920px) and (min-height: 960px) {
+    .header-container {
+        background-position:
+            center top -15%,
+            left -5% top 25%,
+            left 0% top 20% !important;
+        background-size: cover, 55%, 50% !important;
+    }
+}
+
+@media screen and (max-width: 1820px) and (min-height: 960px) {
     .portfolio-headline-text-container {
         p {
             margin-left: 36% !important;
@@ -138,7 +172,7 @@
     }
 }
 
-@media screen and (max-width: 1720px) {
+@media screen and (max-width: 1720px) and (min-height: 960px) {
     .portfolio-headline-text-container {
         p {
             margin-left: 35% !important;
@@ -146,7 +180,7 @@
     }
 }
 
-@media screen and (max-width: 1620px) {
+@media screen and (max-width: 1620px) and (min-height: 960px) {
     .contact-text-content {
         p {
             margin: 0 7% !important;
@@ -160,7 +194,7 @@
     }
 }
 
-@media screen and (max-width: 1420px) {
+@media screen and (max-width: 1480px) and (min-height: 960px) {
     .portfolio-headline-text-container {
         p {
             margin-left: 32% !important;
@@ -168,7 +202,7 @@
     }
 }
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1320px) and (min-height: 960px) {
     .contact-text-content {
         p {
             margin: 0 7.5% !important;
@@ -184,14 +218,21 @@
             margin-left: 29%;
         }
     }
-}
 
-@media screen and (max-width: 1220px) {
     .profile-image .line {
         width: 8% !important;
     }
+
+    .header-container {
+        background-position:
+            center top -60%,
+            left 55% bottom 80%,
+            left 55% top 20% !important;
+        background-size: cover, 70%, 65% !important;
+    }
 }
-@media screen and (max-width: 1120px) {
+
+@media screen and (max-width: 1120px) and (min-height: 960px) {
     .about-content {
         flex-direction: column-reverse;
     }
@@ -217,10 +258,6 @@
         min-width: 25%;
     }
 
-    .header-intro {
-        margin-top: 20% !important;
-    }
-
     .contact-text-content {
         p {
             margin: 0 8% !important;
@@ -228,7 +265,7 @@
     }
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1023px) and (min-height: 960px) {
     .skills-content {
         flex-direction: column-reverse;
     }
@@ -248,9 +285,13 @@
     }
 }
 
-@media screen and (max-width: 990px) {
-    .header-intro {
-        margin-top: 25% !important;
+@media screen and (max-width: 990px) and (min-height: 960px) {
+    .header-container {
+        background-position:
+            center top -60%,
+            left 55% bottom 80%,
+            left 70% top 15% !important;
+        background-size: cover, 85%, 85% !important;
     }
 
     .portfolio-headline-text-container p {
@@ -335,7 +376,7 @@
     }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 860px) and (min-height: 960px) {
     .carousel-container {
         flex-direction: column-reverse;
         align-items: center;
@@ -369,9 +410,13 @@
     }
 }
 
-@media screen and (max-width: 780px) {
-    .header-intro {
-        margin-top: 30% !important;
+@media screen and (max-width: 780px) and (min-height: 960px) {
+    .header-container {
+        background-position:
+            center top -60%,
+            left 55% bottom 78%,
+            left 70% top 25% !important;
+        background-size: cover, 90%, 90% !important;
     }
 
     .menu {
@@ -397,17 +442,13 @@
     }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 680px) and (min-height: 960px) {
     .header-container {
         background-position:
-            center top -15%,
-            center top 20%,
-            center top 20% !important;
-        background-size: cover, 70%, 60% !important;
-    }
-
-    .header-intro {
-        margin-top: 45% !important;
+            center top -60%,
+            left 55% bottom 75%,
+            left 70% top 25% !important;
+        background-size: cover, 90%, 90% !important;
     }
 
     .line {
@@ -441,7 +482,7 @@
     }
 
     .header-content header {
-        width: 92% !important;
+        width: 93.5% !important;
     }
 
     .profile-image-container {
@@ -454,7 +495,15 @@
     }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 580px) and (min-height: 960px) {
+    .header-container {
+        background-position:
+            center top -60%,
+            left 55% bottom 75%,
+            left 70% top 25% !important;
+        background-size: cover, 95%, 95% !important;
+    }
+
     .about-category {
         flex-direction: column;
 
@@ -496,7 +545,7 @@
     }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 520px) and (min-height: 960px) {
     .portfolio-headline-text-container p {
         width: 49% !important;
         margin-left: 0% !important;
@@ -509,13 +558,727 @@
     }
 }
 
-@media screen and (max-width: 480px) {
-    .header-container {
-        background-size: cover, 80%, 80% !important;
+@media screen and (max-width: 480px) and (min-height: 960px) {
+    h2 {
+        font-size: 32px !important;
     }
 
-    .header-intro {
-        margin-top: 55% !important;
+    #impressum h2 {
+        font-size: 24px !important;
+    }
+
+    #privacy-main-container h2 {
+        font-size: 16px !important;
+    }
+
+    p {
+        font-size: 14px !important;
+    }
+
+    .header-container {
+        background-position:
+            center top -60%,
+            left 60% bottom 73%,
+            left 70% top 28% !important;
+        background-size: cover, 95%, 90% !important;
+    }
+
+    .testimonials-headline-text-container {
+        > h2 {
+            padding: 0px 16px !important;
+        }
+
+        > p {
+            width: 80%;
+            margin-top: 16px;
+        }
+    }
+
+    #privacy-main-container {
+        padding: 22px;
+    }
+
+    #impressum {
+        padding: 18px;
+        font-size: 14px;
+    }
+
+    .testimonials-line {
+        top: 20px !important;
+    }
+
+    .profile-image-container {
+        width: 300px !important;
+        height: 300px !important;
+    }
+
+    .testimonial-text-content {
+        width: unset !important;
+    }
+
+    .wording-intro {
+        font-size: 30px !important;
+        margin-top: 4px !important;
+        margin-right: -10px !important;
+        margin-left: -16px !important;
+    }
+
+    .wording-container {
+        > h1 {
+            font-size: 40px !important;
+            margin-bottom: 2px;
+        }
+
+        > span {
+            font-size: 24px !important;
+        }
+    }
+
+    .portfolio-headline-text-container p {
+        width: 44% !important;
+        margin-left: 0% !important;
+    }
+}
+
+@media screen and (max-width: 460px) and (min-height: 960px) {
+    .contact-text-content {
+        p {
+            margin: 0 12.75% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) and (min-height: 960px) {
+    .header-content header {
+        width: 90% !important;
+    }
+
+    .testimonial-image-content {
+        img {
+            width: 200px !important;
+            height: 200px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) and (min-height: 960px) {
+    .profile-image-container {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    .contact-text-content {
+        p {
+            margin: 0 13% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 390px) and (min-height: 960px) {
+    .header-container {
+        background-position:
+            center top -60%,
+            left 55% bottom 72%,
+            left 70% top 27% !important;
+        background-size: cover, 95%, 95% !important;
+    }
+
+    .portfolio-text-content-button-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .portfolio-content {
+        button:last-child {
+            margin-top: 0px !important;
+        }
+    }
+
+    .skills-icons-container {
+        > svg {
+            height: 100px;
+            width: 100px;
+        }
+
+        > span {
+            font-size: 14px;
+        }
+    }
+
+    .portfolio-headline-text-container p {
+        width: 55% !important;
+        margin-left: 8% !important;
+    }
+
+    .contact-text-content {
+        p {
+            margin: 0 13.5% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) and (min-height: 960px) {
+    .profile-image-container {
+        width: 200px !important;
+        height: 200px !important;
+    }
+
+    .wording-intro {
+        font-size: 23px !important;
+        margin-top: 4px !important;
+        margin-right: -7px !important;
+    }
+
+    .wording-container {
+        > h1 {
+            font-size: 28px !important;
+            margin-bottom: 8px;
+        }
+
+        > span {
+            font-size: 18px !important;
+        }
+    }
+
+    .contact-text-content {
+        p {
+            margin: 0 14% !important;
+        }
+    }
+
+    .portfolio-headline-text-container p {
+        margin-left: 0% !important;
+    }
+}
+
+@media screen and (max-width: 320px) and (min-height: 960px) {
+    .contact-text-content {
+        p {
+            margin: 0 14.25% !important;
+        }
+    }
+
+    .header-container {
+        background-position:
+            center top -60%,
+            left 50% top 28%,
+            top 29% left 35% !important;
+        background-size: cover, 95%, 95% !important;
+    }
+}
+
+////////////////////////////////////// MAX-HEIGHT/////////////////////////////////////////////////
+
+@media screen and (min-width: 1921px) and (max-height: 959px) {
+    #impressum {
+        justify-content: center !important;
+        margin-left: 8px !important;
+        height: 100vh;
+    }
+
+    #privacy-main {
+        justify-content: center !important;
+        margin-left: 8px !important;
+        height: 100vh;
+    }
+
+    .header-container {
+        background-position:
+            center top -15%,
+            left -5% top 65%,
+            left 0% top 0% !important;
+        background-size: cover, 55%, 55% !important;
+    }
+}
+
+@media screen and (min-width: 1921px) and (max-height: 860px) {
+    #impressum {
+        justify-content: center !important;
+        margin-left: 8px !important;
+        height: 100vh;
+    }
+
+    #privacy-main {
+        justify-content: center !important;
+        margin-left: 8px !important;
+        height: 100vh;
+    }
+
+    .header-container {
+        background-position:
+            center top 0%,
+            left -5% top 65%,
+            left 0% top 0% !important;
+        background-size: cover, 55%, 55% !important;
+    }
+}
+
+@media screen and (min-width: 1921px) and (max-height: 730px) {
+    #impressum {
+        justify-content: center !important;
+        margin-left: 8px !important;
+        height: 100vh;
+    }
+
+    #privacy-main {
+        justify-content: center !important;
+        margin-left: 8px !important;
+        height: 100vh;
+    }
+
+    .header-container {
+        background-position:
+            center top 10%,
+            left -5% top 65%,
+            left 0% top 0% !important;
+        background-size: cover, 55%, 55% !important;
+    }
+}
+
+@media screen and (min-width: 1921px) and (max-height: 650px) {
+    #impressum {
+        justify-content: center !important;
+        margin-left: 8px !important;
+        height: 100vh;
+    }
+
+    #privacy-main {
+        justify-content: center !important;
+        margin-left: 8px !important;
+        height: 100vh;
+    }
+
+    .header-container {
+        background-position:
+            center top 20%,
+            left -5% top 65%,
+            left 0% top 0% !important;
+        background-size: cover, 55%, 55% !important;
+    }
+}
+
+@media screen and (min-height: 1640px) and (max-height: 2280px) {
+    #impressum {
+        height: 100vh;
+    }
+
+    #privacy-main {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 1920px) and (max-height: 959px) {
+    .header-container {
+        background-position:
+            center top 10%,
+            left -10% top 40%,
+            left 0% top 20% !important;
+        background-size: cover, 55%, 45% !important;
+    }
+}
+
+@media screen and (max-width: 1820px) and (max-height: 959px) {
+    .portfolio-headline-text-container {
+        p {
+            margin-left: 36% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1720px) and (max-height: 959px) {
+    .portfolio-headline-text-container {
+        p {
+            margin-left: 35% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1620px) and (max-height: 959px) {
+    .contact-text-content {
+        p {
+            margin: 0 7% !important;
+        }
+    }
+
+    .portfolio-headline-text-container {
+        p {
+            margin-left: 34% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1480px) and (max-height: 959px) {
+    .portfolio-headline-text-container {
+        p {
+            margin-left: 32% !important;
+        }
+    }
+
+    .header-container {
+        background-position:
+            center top 15%,
+            left -10% top 25%,
+            left 0% top 20% !important;
+        background-size: cover, 50%, 45% !important;
+    }
+}
+
+@media screen and (max-width: 1320px) and (max-height: 959px) {
+    .contact-text-content {
+        p {
+            margin: 0 7.5% !important;
+        }
+    }
+
+    #main-content {
+        overflow-x: hidden !important;
+    }
+
+    .portfolio-headline-text-container {
+        p {
+            margin-left: 29%;
+        }
+    }
+
+    .profile-image .line {
+        width: 8% !important;
+    }
+
+    .header-container {
+        background-position:
+        center top -35%,
+        left 55% bottom 80%,
+        left 70% top 15% !important;
+        background-size: cover, 50%, 65% !important;
+    }
+}
+
+@media screen and (max-width: 1120px) and (max-height: 959px) {
+    .header-container {
+        background-position:
+            center top -60%,
+            left 55% bottom 80%,
+            left 70% top 15% !important;
+        background-size: cover, 60%, 65% !important;
+    }
+
+    .about-content {
+        flex-direction: column-reverse;
+    }
+
+    .profile-image-content {
+        width: 100% !important;
+    }
+
+    .about-text-content {
+        width: 85% !important;
+    }
+
+    .portfolio-headline-text-container p {
+        width: 33% !important;
+        margin-left: 9% !important;
+    }
+
+    .profile-image-container {
+        border: 4px solid #70e61c !important;
+    }
+
+    .line {
+        min-width: 25%;
+    }
+
+    .contact-text-content {
+        p {
+            margin: 0 8% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) and (max-height: 959px) {
+    .skills-content {
+        flex-direction: column-reverse;
+    }
+
+    .skills-text-content {
+        width: unset !important;
+    }
+
+    .skills-image-content {
+        width: unset !important;
+        padding: 32px 32px 32px 32px !important;
+    }
+
+    .portfolio-headline-text-container p {
+        width: 33% !important;
+        margin-left: 8% !important;
+    }
+}
+
+@media screen and (max-width: 990px) and (max-height: 959px) {
+    .header-container {
+        background-position:
+            center top -60%,
+            left 55% bottom 80%,
+            left 70% top 15% !important;
+        background-size: cover, 60%, 65% !important;
+    }
+
+    .portfolio-headline-text-container p {
+        width: 33% !important;
+        margin-left: 6% !important;
+    }
+
+    .portfolio-section:nth-child(odd) {
+        flex-direction: column !important;
+    }
+
+    .portfolio-text-content:nth-child(odd) {
+        padding: 32px !important;
+    }
+
+    .portfolio-text-content:nth-child(even) {
+        padding: 32px !important;
+    }
+
+    .portfolio-section:nth-child(even) {
+        flex-direction: column !important;
+    }
+
+    .contact-line {
+        width: 8% !important;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-form-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 64px;
+        width: unset;
+    }
+
+    .contact-content-container {
+        flex-direction: column;
+    }
+
+    .contact-form-content,
+    .contact-text-content {
+        width: unset !important;
+    }
+
+    .contact-text-content p {
+        margin: 0 10.25% !important;
+    }
+
+    #footer {
+        height: 150px !important;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px 0px !important;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 2px solid #70e61c;
+        height: 200px !important;
+    }
+
+    .footer-logo img {
+        height: 56px;
+    }
+
+    #github-icon-footer {
+        margin: 0 !important;
+    }
+
+    .datenschutz {
+        margin-top: 94px;
+    }
+
+    .impressum {
+        margin-top: 94px;
+    }
+}
+
+@media screen and (max-width: 860px) and (max-height: 959px) {
+    .carousel-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 32px;
+        width: 60% !important;
+    }
+
+    .testimonial-text-content {
+        justify-content: center;
+        width: 100% !important;
+
+        p {
+            font-size: 14px;
+            width: 100% !important;
+        }
+    }
+
+    .button-container {
+        justify-content: center !important;
+    }
+
+    .portfolio-headline-text-container p {
+        width: 37% !important;
+        margin-left: 3% !important;
+    }
+
+    .contact-text-content {
+        p {
+            margin: 0 10.5% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) and (max-height: 959px) {
+    .header-container {
+        background-position:
+            center top -60%,
+            left 55% bottom 80%,
+            left 65% top 15% !important;
+        background-size: cover, 85%, 80% !important;
+    }
+
+    .menu {
+        display: none !important;
+    }
+
+    .profile-image-container {
+        margin: 32px 0px 32px 16px;
+    }
+
+    .header-content header {
+        width: 95% !important;
+    }
+
+    .portfolio-headline-text-container p {
+        width: 37% !important;
+    }
+
+    .contact-text-content {
+        p {
+            margin: 0 11% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 680px) and (max-height: 959px) {
+    .line {
+        width: unset !important;
+        min-width: 15%;
+    }
+
+    .header-contact-container {
+        > a {
+            display: none;
+        }
+    }
+
+    .scroll-down {
+        display: none;
+    }
+
+    .wording-intro {
+        font-size: 40px !important;
+        margin-top: 10px;
+    }
+
+    .wording-container {
+        > h1 {
+            font-size: 56px !important;
+        }
+
+        > span {
+            font-size: 24px !important;
+        }
+    }
+
+    .header-content header {
+        width: 93.5% !important;
+    }
+
+    .profile-image-container {
+        width: 350px !important;
+        height: 350px !important;
+    }
+
+    .portfolio-headline-text-container p {
+        width: 42% !important;
+    }
+}
+
+@media screen and (max-width: 580px) and (max-height: 959px) {
+    .about-category {
+        flex-direction: column;
+
+        > svg {
+            margin-bottom: 8px;
+        }
+    }
+
+    .about-category p {
+        width: 100% !important;
+    }
+
+    .about-text-content,
+    .skills-text-content {
+        padding: 32px 0px 32px 32px !important;
+    }
+
+    .about-text-content {
+        padding: 32px !important;
+    }
+
+    .skills-text-content p {
+        padding-right: 32px !important;
+    }
+
+    .skills-image-content {
+        padding: 32px 16px !important;
+    }
+
+    .portfolio-headline-text-container p {
+        width: 46% !important;
+        margin-left: 0% !important;
+    }
+
+    .contact-text-content {
+        p {
+            margin: 0 11.5% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) and (max-height: 959px) {
+    .portfolio-headline-text-container p {
+        width: 49% !important;
+        margin-left: 0% !important;
+    }
+
+    .contact-text-content {
+        p {
+            margin: 0 12% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) and (max-height: 959px) {
+    .header-container {
+        background-position:
+            center top 30%,
+            left 40% bottom 80%,
+            top 15% left 35% !important;
+        background-size: cover, 85%, 95% !important;
     }
 
     h2 {
@@ -527,7 +1290,7 @@
     }
 
     #privacy-main-container h2 {
-        font-size: 24px !important;
+        font-size: 16px !important;
     }
 
     p {
@@ -591,15 +1354,7 @@
     }
 }
 
-@media screen and (max-width: 460px) {
-    .header-intro {
-        margin-top: 85% !important;
-    }
-
-    .header-container {
-        background-size: cover, 100%, 100% !important;
-    }
-    
+@media screen and (max-width: 460px) and (max-height: 959px) {
     .contact-text-content {
         p {
             margin: 0 12.75% !important;
@@ -607,9 +1362,7 @@
     }
 }
 
-@media screen and (max-width: 440px) {
-
-
+@media screen and (max-width: 440px) and (max-height: 959px) {
     .header-content header {
         width: 90% !important;
     }
@@ -622,7 +1375,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) and (max-height: 959px) {
     .profile-image-container {
         width: 250px !important;
         height: 250px !important;
@@ -635,9 +1388,13 @@
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 390px) and (max-height: 959px) {
     .header-container {
-        background-size: cover, 100%, 100% !important;
+        background-position:
+            center top 30%,
+            left 40% bottom 80%,
+            top 15% left 35% !important;
+        background-size: cover, 85%, 95% !important;
     }
 
     .portfolio-text-content-button-container {
@@ -675,7 +1432,7 @@
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 350px) and (max-height: 959px) {
     .profile-image-container {
         width: 200px !important;
         height: 200px !important;
@@ -709,10 +1466,28 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) and (max-height: 959px) {
     .contact-text-content {
         p {
             margin: 0 14.25% !important;
         }
+    }
+
+    .header-container {
+        background-position:
+            center top -60%,
+            left 50% top 20%,
+            top 15% left 45% !important;
+        background-size: cover, 95%, 95% !important;
+    }
+}
+
+@media screen and (max-width: 280px) and (max-height: 959px) {
+    .header-container {
+        background-position:
+            center top -60%,
+            left 45% top 25%,
+            top 25% left 35% !important;
+        background-size: cover, 160%, 160% !important;
     }
 }

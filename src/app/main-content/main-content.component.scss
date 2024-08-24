@@ -19,9 +19,9 @@ section {
     > #main-content {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         background-color: #141d2f;
         max-width: 1920px;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
 }

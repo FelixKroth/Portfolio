@@ -1,7 +1,7 @@
 .skills-content {
     display: flex;
     align-items: flex-start;
-    margin: 128px 0px 64px 0px;
+    margin: 64px 0px;
     > .skills-image-content {
         display: flex;
         width: 60%;
@@ -18,10 +18,10 @@
 
             .background-shadow {
                 position: absolute;
-                left: -250px;
-                bottom: 15%;
+                left: -30%;
+                bottom: 10%;
                 background: transparent;
-                height: 85%;
+                height: 80%;
             }
 
             > .skills-icons-container {
@@ -67,6 +67,7 @@
         width: 50%;
         padding: 32px 0px 32px 64px;
         background: transparent;
+        
         > .text-content-headline {
             display: flex;
             align-items: center;
@@ -82,11 +83,13 @@
                 background: transparent;
             }
         }
+
         > p {
             background: transparent;
             padding-right: 64px;
             margin-top: 16px;
         }
+
         > .skills-button-container {
             display: flex;
             justify-content: flex-start;

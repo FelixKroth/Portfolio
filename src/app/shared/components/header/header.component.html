@@ -55,9 +55,10 @@
         >
           DE
         </span>
-        <a (click)="scrollToSection('about', $event)" id="menu-about">{{ 'about' | translate }}</a>
-        <a (click)="scrollToSection('skills', $event)" id="menu-skills">{{ 'skills' | translate }}</a>
-        <a (click)="scrollToSection('portfolio', $event)" id="menu-portfolio">{{ 'portfolio' | translate }}</a>
+        <a (click)="scrollToSectionOnPage('about')" id="menu-about" data-aos="fade-up" data-aos-duration="1100">{{ 'about' | translate }}</a>
+        <a (click)="scrollToSectionOnPage('skills')" id="menu-skills" data-aos="fade-up"  data-aos-delay="50" data-aos-duration="1100">{{ 'skills' | translate }}</a>
+        <a (click)="scrollToSectionOnPage('portfolio')" id="menu-portfolio" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1100">{{ 'portfolio' | translate }}</a>
+
       </div>
     </nav>
   </header>

@@ -28,6 +28,17 @@ import AOS from 'aos';
 
 export class MainContentComponent {
   ngOnInit() {
-    AOS.init();
+    AOS.init({
+      startEvent: 'DOMContentLoaded',
+      disable: false,
+      once: true,
+    });
+  }
+
+  scrollToSection(section: string) {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }

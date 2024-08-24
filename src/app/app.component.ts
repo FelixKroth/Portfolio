@@ -46,10 +46,22 @@ export class AppComponent implements AfterViewInit {
       const windowHeight = window.innerHeight;
       const scrollPosition = window.scrollY;
       const footerTopPosition = footerRect.top + scrollPosition;
-
+  
       const marginBottom = 16;
-      const buttonHeight = scrollTop.offsetHeight;
-      const buttonDistanceFromFooter = footerTopPosition - (scrollPosition + windowHeight + marginBottom) ;
+      const buttonDistanceFromFooter = footerTopPosition - (scrollPosition + windowHeight + marginBottom);
+  
+      const contentMaxWidth = 1920;
+      const buttonMarginRight = 24;
+      const viewportWidth = window.innerWidth;
+  
+      let rightValue = buttonMarginRight;
+  
+      if (viewportWidth > contentMaxWidth) {
+        const excessWidth = (viewportWidth - contentMaxWidth) / 2;
+        rightValue = excessWidth + buttonMarginRight;
+      }
+
+      scrollTop.style.right = `${rightValue}px`;
 
       if (buttonDistanceFromFooter <= 0) {
         const overlap = Math.abs(buttonDistanceFromFooter) + marginBottom;
@@ -59,7 +71,7 @@ export class AppComponent implements AfterViewInit {
         scrollTop.style.position = 'fixed';
         scrollTop.style.bottom = `${marginBottom}px`;
       }
-    } 
+    }
   }
 
   scrollToTop() {

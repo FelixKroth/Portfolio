@@ -72,4 +72,11 @@ export class ContactComponent {
   get isFormInvalid() {
     return this.contactForm.invalid;
   }
+
+  scrollToSection(section: string) {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

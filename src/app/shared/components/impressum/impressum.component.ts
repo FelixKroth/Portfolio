@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-impressum',
@@ -10,5 +10,7 @@ import { RouterModule } from '@angular/router';
 })
 
 export class ImpressumComponent {
-
+  constructor(private router: Router) { 
+    window.scrollTo(0, 0)
+  }
 }
