@@ -4,34 +4,39 @@
     "portfolio": "Portfolio",
     "contact": "Kontakt",
     "imprint": "Impressum",
-    "language": {
+    "language": 
+    {
         "english": "Englisch",
         "german": "Deutsch"
     },
-    "intro": {
+    "intro": 
+    {
         "am": "I AM",
         "name": "FELIX KROTH",
         "profession": "FRONTEND DEVELOPER",
         "letsTalk": "KONTAKT AUFNEHMEN"
     },
-    "contactHeader": {
+    "contactHeader": 
+    {
         "githubAlt": "Github-Icon",
         "mailAlt": "Mail-Icon",
         "linkedInAlt": "LinkedIn-Icon",
         "scrollDown": "WEITER SCROLLEN",
         "scrollDownAlt": "Scrollen nach unten Pfeil"
     },
-    "aboutContent": {
+    "aboutContent": 
+    {
         "title": "ÜBER MICH",
-        "description": "Ich bin ein leidenschaftlicher Frontend-Entwickler mit einem starken Fokus auf moderne Webtechnologien. Es begeistert mich, ansprechende und benutzerfreundliche Anwendungen zu schaffen, die eine nahtlose digitale Erfahrung bieten.",
-        "category1": "Frontend-Entwicklung",
+        "description": "Ich bin ein begeisterter Frontend-Entwickler mit einem starken Fokus auf moderne Webtechnologien. Es begeistert mich, ansprechende und benutzerfreundliche Anwendungen zu schaffen, die eine nahtlose digitale Erfahrung bieten.",
+        "category1": "FRONTEND-ENTWICKLUNG",
         "category1Text": "Meine Expertise liegt in der Erstellung von responsiven, effizienten und visuell ansprechenden Benutzeroberflächen. Dabei nutze ich moderne Frameworks und Tools, um sicherzustellen, dass jedes Projekt in Bezug auf Leistung und Barrierefreiheit auf allen Geräten optimiert ist.",
-        "category2": "Benutzerzentrierte Designs",
+        "category2": "BENUTZERZENTRIERTE DESIGNS",
         "category2Text": "Ich bin überzeugt, dass großartiges Design mit einem tiefen Verständnis für die Bedürfnisse der Benutzer beginnt. Deshalb steht die Benutzererfahrung bei mir in jedem Schritt des Entwicklungsprozesses im Mittelpunkt. So stelle ich sicher, dass das Endprodukt nicht nur funktional, sondern auch intuitiv und angenehm zu nutzen ist."
     },
-    "skillsContent": {
+    "skillsContent": 
+    {
         "angular": "ANGULAR",
-        "api": "API",
+        "api": "REST API",
         "css": "CSS",
         "firebase": "FIREBASE",
         "git": "GIT",
@@ -47,66 +52,78 @@
         "corona": "CORONA",
         "octane": "OCTANE"
     },
-    "skillsText": {
+    "skillsText": 
+    {
         "headline": "FÄHIGKEITEN",
         "description": "Ich habe eine solide Grundlage in der modernen Webentwicklung und Erfahrung in JavaScript, TypeScript und Angular. Ich arbeite gerne an der Erstellung dynamischer, benutzerorientierter Anwendungen unter Verwendung von HTML5, CSS/SCSS und Tools wie Firebase zur Backend-Integration. Außerdem habe ich Erfahrung im Umgang mit APIs, um nahtlose Verbindungen zwischen Frontend-Oberflächen und Backend-Services zu schaffen.",
         "button_text": "KONTAKT AUFNEHMEN",
         "subline": "SIE SUCHEN NACH EINER ANDEREN QUALIFIKATION?",
         "sublineText": "Nehmen Sie Kontakt mit mir auf. Ich freue mich darauf, mein Wissen zu erweitern und wäre besonders daran interessiert, meine Fähigkeiten in Vue JS und React zu vertiefen."
     },
-    "portfolioContent": {
+    "portfolioContent": 
+    {
         "headline": "PORTFOLIO",
         "description": "Willkommen in meinem Portfolio! Hier finden Sie eine Auswahl an Projekten, die meinen Weg als Frontend-Entwickler zeigen. Jedes Projekt spiegelt die Fähigkeiten wider, die ich erworben habe, und mein Engagement für die Entwicklung ansprechender, benutzerfreundlicher Webanwendungen.",
-        "pokedex": {
+        "pokedex": 
+        {
             "title": "POKEDEX",
-            "subtitle": "JAVASCRIPT | HTML | CSS | API",
-            "description": "Ein interaktives Projekt zur Darstellung von Pokémon-Daten mithilfe einer API.",
+            "subtitle": "JAVASCRIPT <span style='color: #d2300b; background: transparent;'>|</span> HTML <span style='color: #d2300b; background: transparent;'>|</span> CSS <span style='color: #d2300b; background: transparent;'>|</span> REST API",
+            "description": "Ein interaktives Projekt zur Darstellung von Pokémon-Daten mithilfe einer REST API.",
             "button_live_test": "LIVE TEST",
             "button_github": "GIT HUB"
         },
-        "join": {
+        "join": 
+        {
             "title": "JOIN",
-            "subtitle": "JAVASCRIPT | HTML | CSS | FIREBASE",
+            "subtitle": "JAVASCRIPT <span style='color: #d2300b; background: transparent;'>|</span> HTML <span style='color: #d2300b; background: transparent;'>|</span> CSS <span style='color: #d2300b; background: transparent;'>|</span> FIREBASE",
             "description": "Ein Task-Management-Tool, das die Zusammenarbeit in Teams erleichtert.",
             "button_live_test": "LIVE TEST",
             "button_github": "GIT HUB"
         },
-        "el_pollo_loco": {
+        "el_pollo_loco": 
+        {
             "title": "EL POLLO LOCO",
-            "subtitle": "JAVASCRIPT | HTML | CSS | OBJECT ORIENTIERUNG",
+            "subtitle": "JAVASCRIPT <span style='color: #d2300b; background: transparent;'>|</span> HTML <span style='color: #d2300b; background: transparent;'>|</span> CSS <span style='color: #d2300b; background: transparent;'>|</span> OBJEKT ORIENTIERUNG",
             "description": "Ein Spielprojekt, das grundlegende Konzepte der objektorientierten Programmierung verdeutlicht.",
             "button_live_test": "LIVE TEST",
             "button_github": "GIT HUB"
         },
-        "portfolio": {
+        "portfolio": 
+        {
             "title": "PORTFOLIO",
-            "subtitle": "ANGULAR | TYPESCRIPT | HTML | CSS | HOSTING",
+            "subtitle": "ANGULAR <span style='color: #d2300b; background: transparent;'>|</span> TYPESCRIPT <span style='color: #d2300b; background: transparent;'>|</span> HTML <span style='color: #d2300b; background: transparent;'>|</span> CSS <span style='color: #d2300b; background: transparent;'>|</span> HOSTING",
             "description": "Diese Website dient als Portfolio und zeigt meine Fähigkeiten in Angular und Webentwicklung.",
             "button_live_test": "LIVE TEST",
             "button_github": "GIT HUB"
         }
     },
-    "testimonialsContent": {
+    "testimonialsContent": 
+    {
         "headline": "REFERENZEN",
         "description": "Was andere über meine Arbeit sagen.",
         "quotation_marks_alt": "Anführungszeichen",
         "testimonial_image_alt": "REFERENZEN Bild"
     },
-    "testimonialsContainer": {
-        "testimonial1": {
-            "text": "Felix ist ein talentierter Entwickler, der stets qualitativ hochwertige Arbeit liefert.",
-            "author": "John Doe"
+    "testimonialsContainer": 
+    {
+        "testimonial1": 
+        {
+            "text": "Felix hat in unserem Team eine bedeutende Rolle gespielt und durch seine Fachkenntnisse und analytischen Fähigkeiten wesentlich zum Projektfortschritt beigetragen. Seine Beiträge sind von großem Wert für den Erfolg unseres Projekts.",
+            "author": "- Roken Othman"
         },
-        "testimonial2": {
-            "text": "Ich habe Felix als engagierten und kreativen Entwickler kennengelernt.",
-            "author": "Jane Smith"
+        "testimonial2": 
+        {
+            "text": "Felix beeindruckt stets mit seiner Ruhe und Gelassenheit, selbst in herausfordernden Situationen. Er liebt es, sich mit komplexen Aufgaben auseinanderzusetzen und bleibt unermüdlich, bis er eine Lösung gefunden hat, egal wie viel Zeit es in Anspruch nimmt. Seine Fähigkeit, Dinge schnell zu verstehen und klar zu erklären, macht ihn zu einem wertvollen Mitglied in jedem Team.",
+            "author": "- Bünyamin Tig"
         },
-        "testimonial3": {
-            "text": "Seine Fähigkeit, komplexe Probleme zu lösen, hat mich sehr beeindruckt.",
-            "author": "Michael Johnson"
+        "testimonial3": 
+        {
+            "text": "Seine Fähigkeit, Herausforderungen zu meistern und effizient zu arbeiten, macht ihn zu einem sehr wertvollen Teammitglied. Seine Beharrlichkeit und sein Engagement sind bewundernswert und tragen maßgeblich zum Erfolg des Projekts bei.",
+            "author": "- Karina Tanei"
         }
     },
-    "contactContent": {
+    "contactContent": 
+    {
         "headline": "KONTAKT",
         "description": "Ich freue mich darauf, von Ihnen zu hören. Lassen Sie uns über Ihr nächstes Projekt sprechen.",
         "placeholder_name": "Ihr Name",
@@ -122,5 +139,193 @@
         "checkboxPrivacy": "Datenschutzerklärung",
         "checkboxText2": " gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
     },
-    "footerImprint": "IMPRESSUM"
+    "footerImprint": "IMPRESSUM",
+    "impressum": 
+    {
+        "title": "IMPRESSUM",
+        "address": "Felix Kroth\nIm Wingert 24",
+        "city": "63801 Kleinostheim",
+        "contact": 
+        {
+            "title": "KONTAKT",
+            "email": "E-Mail: contact@felix-kroth.de",
+            "phone": "Telefon: +49 163 2076800"
+        },
+        "disclaimer": 
+        {
+            "title": "HAFTUNGSAUSSCHLUSS",
+            "content": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.",
+            "liability": 
+            {
+                "title": "HAFTUNG FÜR LINKS",
+                "content": "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltpunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.",
+                "copyright": 
+                {
+                    "title": "URHEBERRECHT",
+                    "content": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen."
+                }
+            },
+            "links": 
+            {
+                "title": "CREDITS",
+                "content1": "Bild von naty2work auf Pixabay",
+                "content2": "Bild von melancholiaphotography auf Pixabay",
+                "content3": "Bild von Pexels auf Pixabay",
+                "content4": "Bild von Nick auf Pixabay",
+                "content5": "Github Icons erstellt von Pixel perfect - Flaticon",
+                "content6": "Email Icons erstellt von Freepik - Flaticon",
+                "content7": "Linkedin Icons erstellt von Pixel perfect - Flaticon",
+                "content8": "Checkbox Icons erstellt von Freepik - Flaticon",
+                "content9": "Creative cloud Icons erstellt von Fathema Khanom - Flaticon"
+            },
+            "source": "Quelle: ",
+            "source1": "Quelle: ",
+            "backToHome": "BACK TO HOME"
+        }
+    },
+    "privacy": 
+    {
+        "heading": "DATENSCHUTZERKLÄRUNG",
+        "section1": 
+        {
+            "heading": "1. Datenschutz auf einen Blick"
+        },
+        "general": 
+        {
+            "notes": "Allgemeine Hinweise",
+            "notes2": "Datenerfassung auf dieser Website"
+        },
+        "responsibility": 
+        {
+            "heading": "Wer ist verantwortlich für die Datenerfassung auf dieser Website?"
+        },
+        "data": 
+        {
+            "collection": 
+            {
+                "heading": "Wie erfassen wir Ihre Daten?"
+            },
+            "usage": 
+            {
+                "heading": "Wofür nutzen wir Ihre Daten?"
+            }
+        },
+        "rights": 
+        {
+            "heading": "Welche Rechte haben Sie bezüglich Ihrer Daten?"
+        },
+        "section2": 
+        {
+            "heading": "2. Hosting"
+        },
+        "section3": 
+        {
+            "heading": "3. Allgemeine Hinweise und Pflichtinformationen"
+        },
+        "data-protection": 
+        {
+            "heading": "Datenschutz"
+        },
+        "controller.info": 
+        {
+            "heading": "Hinweis zur verantwortlichen Stelle",
+            "description": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:"
+        },
+        "storage.duration": 
+        {
+            "heading": "Speicherdauer"
+        },
+        "legal.basis": 
+        {
+            "heading": "Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf dieser Website"
+        },
+        "data-recipients": 
+        {
+            "heading": "Empfänger von personenbezogenen Daten"
+        },
+        "consent.revocation": 
+        {
+            "heading": "Widerruf Ihrer Einwilligung zur Datenverarbeitung"
+        },
+        "objection.right": 
+        {
+            "heading": "Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)"
+        },
+        "complaint.right": 
+        {
+            "heading": "Beschwerderecht bei der zuständigen Aufsichtsbehörde"
+        },
+        "data-portability": 
+        {
+            "heading": "Recht auf Datenübertragbarkeit"
+        },
+        "access.correction.deletion": 
+        {
+            "heading": "Auskunft, Berichtigung und Löschung"
+        },
+        "processing.restriction": 
+        {
+            "heading": "Recht auf Einschränkung der Verarbeitung"
+        },
+        "encryption": 
+        {
+            "heading": "SSL- bzw. TLS-Verschlüsselung"
+        },
+        "section4": 
+        {
+            "heading": "4. Datenerfassung auf dieser Website"
+        },
+        "contact.form": 
+        {
+            "heading": "Kontaktformular"
+        },
+        "email.request": 
+        {
+            "heading": "Anfrage per E-Mail, Telefon oder Telefax"
+        },
+        "source": "Quelle: ",
+        "backToHome": "ZURÜCK ZUR STARTSEITE"
+    },
+    "privacy-paragraphs": 
+    {
+        "1st.paragraph": "Die folgenden Hinweise geben einen einfachen überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.",
+        "2nd.paragraph": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt Hinweis zur Verantwortlichen Stelle in dieser Datenschutzerklärung entnehmen.",
+        "3rd.paragraph": "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.",
+        "4th.paragraph": "Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.",
+        "5th.paragraph": "Ein Teil der Daten wird erhoben, um eine fehlerfreie der Website zu gewährleisten. Andere Daten können zur Analyse Nutzerverhaltens verwendet werden.",
+        "6th.paragraph": " Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder dieser Daten zu verlangen. Wenn Sie eine zur Datenverarbeitung haben, können Sie diese Einwilligung für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter Umständen die Einschränkung der Verarbeitung Ihrer Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.",
+        "7th.paragraph": "Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.",
+        "7th.2.paragraph": "Wir hosten die Inhalte unserer Website bei folgendem Anbieter:",
+        "8th.paragraph": "Anbieter ist die ALL-INKL.COM - Neue Medien Münnich, Inh. René; Münnich, Hauptstraße 68, 02742 Friedersdorf (nachfolgend All-Inkl). Details entnehmen Sie der Datenschutzerklärung von All-Inkl:",
+        "9th.paragraph": "Die Verwendung von All-Inkl erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne des TDDDG umfasst. Die Einwilligung ist jederzeit widerrufbar.",
+        "10th.paragraph": "Die Betreiber dieser Seiten nehmen den Schutz Ihrer Daten sehr  ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.",
+        "11th.paragraph": "Wenn Sie diese Website benutzen, werden verschiedene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.",
+        "12th.paragraph": "Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.",
+        "13th.paragraph": "Telefon:",
+        "14th.paragraph": "E-Mail:",
+        "15th.paragraph": "Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. ä.) entscheidet.",
+        "16th.paragraph": "Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.",
+        "17th.paragraph": "Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern besondere Datenkategorien nach Art. 9 Abs. 1 DSGVO verarbeitet werden. Im Falle einer ausdrücklichen Einwilligung in die übertragung personenbezogener Daten in Drittstaaten erfolgt die Datenverarbeitung außerdem auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO. Sofern Sie in die Speicherung von Cookies oder in den Zugriff auf Informationen in Ihr Endgerät (z. B. via Device-Fingerprinting) eingewilligt haben, erfolgt die Datenverarbeitung zusätzlich auf Grundlage von § 25 Abs. 1 TDDDG. Die Einwilligung ist jederzeit widerrufbar. Sind Ihre Daten zur Vertragserfüllung oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, verarbeiten wir Ihre Daten auf Grundlage des Art. 6 Abs. 1 lit. b DSGVO. Des Weiteren verarbeiten wir Ihre Daten, sofern diese zur Erfüllung einer rechtlichen Verpflichtung erforderlich sind auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO. Die Datenverarbeitung kann ferner auf Grundlage unseres berechtigten Interesses nach Art. 6 Abs. 1 lit. f DSGVO erfolgen. über die jeweils im Einzelfall einschlägigen Rechtsgrundlagen wird in den folgenden Absätzen dieser Datenschutzerklärung informiert.",
+        "18th.paragraph": "Im Rahmen unserer Geschäftstätigkeit arbeiten wir mit verschiedenen externen Stellen zusammen. Dabei ist teilweise auch eine Übermittlung von personenbezogenen Daten an diese externen Stellen erforderlich. Wir geben personenbezogene Daten nur dann an externe Stellen weiter, wenn dies im Rahmen einer Vertragserfüllung erforderlich ist, wenn wir gesetzlich hierzu verpflichtet sind (z. B. Weitergabe von Daten an Steuerbehörden), wenn wir ein berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO an der Weitergabe haben oder wenn eine sonstige Rechtsgrundlage die Datenweitergabe erlaubt. Beim Einsatz von Auftragsverarbeitern geben wir personenbezogene Daten unserer Kunden nur auf Grundlage eines gültigen Vertrags über Auftragsverarbeitung weiter. Im Falle einer gemeinsamen Verarbeitung wird ein Vertrag über gemeinsame Verarbeitung geschlossen.",
+        "19th.paragraph": "Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.",
+        "20th.paragraph": "WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRüNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FüR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).",
+        "21st.paragraph": "WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN, SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE DERARTIGER WERBUNG EINZULEGEN; DIES GILT AUCH FüR DAS PROFILING, SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG STEHT. WENN SIE WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO).",
+        "22nd.paragraph": "Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.",
+        "23rd.paragraph": "Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.",
+        "24th.paragraph": "Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.",
+        "25th.paragraph": "Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in folgenden Fällen:",
+        "26th.paragraph": "Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.",
+        "27th.paragraph": "Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie statt der Löschung die Einschränkung der Datenverarbeitung verlangen.",
+        "28th.paragraph": "Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.",
+        "29th.paragraph": "Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.",
+        "30th.paragraph": "Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten - von ihrer Speicherung abgesehen - nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden.",
+        "31st.paragraph": "Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von http:// auf https:// wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.",
+        "32nd.paragraph": "Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.",
+        "33rd.paragraph": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.",
+        "34th.paragraph": "Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar.",
+        "35th.paragraph": "Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen - insbesondere Aufbewahrungsfristen - bleiben unberührt.",
+        "36th.paragraph": "Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.",
+        "37th.paragraph": "Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar.",
+        "38th.paragraph": "Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen - insbesondere gesetzliche Aufbewahrungsfristen - bleiben unberührt."
+    }
 }

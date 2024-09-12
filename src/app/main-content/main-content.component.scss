@@ -1,5 +1,5 @@
 body {
-    background-color: #06171e;
+    background-color: #141d2f;
 }
 
 * {
@@ -10,12 +10,13 @@ body {
 
 * {
     scrollbar-width: thin;
-    scrollbar-color: #70e61c #dddddd00;
+    /* Change the white to any color */
 }
 
 section {
     display: flex;
     justify-content: center;
+    overflow: hidden;
     > #main-content {
         display: flex;
         flex-direction: column;

@@ -1,6 +1,6 @@
 .error-message-inputs {
   width: 80%;
-  color: red;
+  color: #056991;
   margin-top: -8px;
   margin-bottom: 16px;
   margin-left: 32px;
@@ -46,6 +46,7 @@
     top: 25%;
     background: transparent;
     height: 95%;
+    filter: opacity(0.25);
   }
 
   .contact-headline-container {
@@ -57,7 +58,7 @@
     }
     .contact-line {
       height: 4px;
-      background-color: #70e61c;
+      background-color: #d2300b;
       width: 2%;
     }
   }
@@ -101,11 +102,11 @@
               > a {
                 background-color: transparent;
                 text-decoration: none;
-                color: #9206bc;
+                color: #d2300b;
               }
 
               > a:hover {
-                color: #70e61c;
+                color: #056991;
                 cursor: pointer;
               }
             }
@@ -125,12 +126,12 @@
               border-radius: 4px !important;
               margin-right: 16px;
               background: url("/assets/img/unchecked_WHT.svg") !important;
-              background-color: transparent;
+              background-color: #141d2fc9;
             }
 
             input[type="checkbox"]:checked {
               background: url("/assets/img/checked_WHT.svg") !important;
-              background-color: transparent;
+              background-color: #141d2fc9;
             }
 
             input[type="checkbox"]:hover {
@@ -143,21 +144,25 @@
         input,
         textarea {
           width: 75%;
-          border: 2px solid #9206bc;
+          border: 2px solid #d2300b;
           border-radius: 4px;
           padding: 8px;
           margin-bottom: 16px;
           color: white;
           resize: vertical;
-          background-color: transparent;
+          background-color: #141d2fc9;
 
           &:focus {
             outline: none;
-            background: transparent;
+            background: #141d2fc9;
           }
 
           &::placeholder {
             color: rgba($color: #fff, $alpha: 0.6);
+          }
+
+          &:-webkit-autofill:focus {
+            transition: all 0s 50000s;
           }
         }
       }
@@ -173,10 +178,10 @@
           border-radius: 8px;
           cursor: pointer;
           margin-top: 32px;
-          background-color: #70e61c;
-          border: 2px solid #70e61c;
+          background-color: #056991;
+          border: 2px solid #056991;
           background-size: 0% 100%;
-          background-image: linear-gradient(#141d2f, #141d2f);
+          background-image: linear-gradient(#141d2fc9, #141d2fc9);
           background-repeat: no-repeat;
           transition:
             background-size 0.5s,
@@ -191,8 +196,8 @@
         }
 
         button.disabled {
-          background-color: #b6e297;
-          border: 2px solid #b6e297;
+          background-color: #387d8e;
+          border: 2px solid #387d8e;
           background-size: 0% 100%;
           cursor: not-allowed;
         }

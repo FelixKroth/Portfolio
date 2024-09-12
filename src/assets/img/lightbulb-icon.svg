@@ -4,12 +4,12 @@
     <style>
       .cls-1 {
         fill: none;
-        stroke: #70e61c;
+        stroke: #056991;
         stroke-width: 2px;
       }
 
       .cls-2 {
-        fill: #70e61c;
+        fill: #056991;
       }
     </style>
   </defs>

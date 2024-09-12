@@ -42,8 +42,6 @@ export class TestimonialsComponent implements OnInit, OnDestroy {
 
   constructor(private translateService: TranslateService) {}
 
-  private sectionToScroll: string | null = null;
-
   ngOnInit() {
     this.loadTranslations();
     this.langChangeSubscription = this.translateService.onLangChange.subscribe(() => {
@@ -82,8 +80,11 @@ export class TestimonialsComponent implements OnInit, OnDestroy {
 
   previousTestimonial() {
     this.currentTestimonialIndex =
-      (this.currentTestimonialIndex - 1 + this.testimonials.length) %
-      this.testimonials.length;
+      (this.currentTestimonialIndex - 1 + this.testimonials.length) % this.testimonials.length;
+  }
+
+  goToTestimonial(index: number) {
+    this.currentTestimonialIndex = index;
   }
 
   get currentTestimonial() {
@@ -93,14 +94,6 @@ export class TestimonialsComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     if (this.langChangeSubscription) {
       this.langChangeSubscription.unsubscribe();
-    }
-  }
-
-  scrollToSection(section: string) {
-    const element = document.getElementById(section);
-    if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        this.sectionToScroll = null;
     }
   }
 }

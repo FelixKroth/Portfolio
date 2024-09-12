@@ -8,7 +8,7 @@
         top: 35%;
         background: transparent;
         height: 50%;
-        filter: opacity(0.5);
+        filter: opacity(0.25);
     }
 
     > .portfolio-headline {
@@ -48,7 +48,7 @@
                 z-index: 1;
                 height: 4px;
                 width: 80%;
-                background-color: #9206bc;
+                background-color: #d2300b;
             }
         }
     }
@@ -83,17 +83,17 @@
                 background: transparent;
                 font-weight: 600;
                 font-size: 40px;
-                color: #9206bc;
-                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+                color: #d2300b;
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
             }
 
             > h3 {
                 background: transparent;
                 font-weight: 400;
                 font-size: 20px;
-                color: #70e61c;
+                color: #056991;
                 margin-bottom: 32px;
-                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
             }
 
             > .portfolio-text-content-button-container {
@@ -101,16 +101,16 @@
                 gap: 16px;
                 background: transparent;
                 > button:first-child {
-                    color: #141d2f;
+                    color: white;
                     font-weight: 600;
                     padding: 8px 32px;
                     border-radius: 8px;
                     cursor: pointer;
                     margin-top: 32px;
-                    background-color: #9206bc;
-                    border: 2px solid #9206bc;
+                    background-color: #d2300b;
+                    border: 2px solid #d2300b;
                     // background-position: 50% 50%;
-                    background-size: 0% 100%;
+                    background-size: 100% 100%;
                     background-image: linear-gradient(#141d2f, #141d2f);
                     background-repeat: no-repeat;
                     transition:
@@ -120,10 +120,10 @@
                 }
 
                 > button:first-child:hover {
-                    color: white;
+                    color: #141d2f;
                     font-weight: 600;
                     // background-position: 0% 50%;
-                    background-size: 100% 100%;
+                    background-size: 0% 100%;
                 }
 
                 > button:last-child {
@@ -134,10 +134,10 @@
 
                     margin-top: 32px;
                     background-color: transparent;
-                    border: 2px solid #70e61c;
+                    border: 2px solid #056991;
                     // background-position: 50% 50%;
                     background-size: 0% 100%;
-                    background-image: linear-gradient(#70e61c, #70e61c);
+                    background-image: linear-gradient(#056991, #056991);
                     background-repeat: no-repeat;
                     transition:
                         background-size 0.5s,
@@ -186,18 +186,18 @@
             > h2 {
                 font-weight: 600;
                 font-size: 40px;
-                color: #9206bc;
+                color: #d2300b;
                 background: transparent;
-                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
             }
 
             > h3 {
                 font-weight: 400;
                 font-size: 20px;
-                color: #70e61c;
+                color: #056991;
                 margin-bottom: 32px;
                 background: transparent;
-                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
             }
 
             > .portfolio-text-content-button-container {
@@ -206,16 +206,16 @@
                 background: transparent;
 
                 > button:first-child {
-                    color: #141d2f;
+                    color: white;
                     font-weight: 600;
                     padding: 8px 32px;
                     border-radius: 8px;
                     cursor: pointer;
                     margin-top: 32px;
-                    background-color: #9206bc;
-                    border: 2px solid #9206bc;
+                    background-color: #d2300b;
+                    border: 2px solid #d2300b;
                     // background-position: 50% 50%;
-                    background-size: 0% 100%;
+                    background-size: 100% 100%;
                     background-image: linear-gradient(#141d2f, #141d2f);
                     background-repeat: no-repeat;
                     transition:
@@ -225,10 +225,10 @@
                 }
 
                 > button:first-child:hover {
-                    color: white;
+                    color: #141d2f;
                     font-weight: 600;
                     // background-position: 0% 50%;
-                    background-size: 100% 100%;
+                    background-size: 0% 100%;
                 }
 
                 > button:last-child {
@@ -239,10 +239,10 @@
 
                     margin-top: 32px;
                     background-color: transparent;
-                    border: 2px solid #70e61c;
+                    border: 2px solid #056991;
                     // background-position: 50% 50%;
                     background-size: 0% 100%;
-                    background-image: linear-gradient(#70e61c, #70e61c);
+                    background-image: linear-gradient(#056991, #056991);
                     background-repeat: no-repeat;
                     transition:
                         background-size 0.5s,

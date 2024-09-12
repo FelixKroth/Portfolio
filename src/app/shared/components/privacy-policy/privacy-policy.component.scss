@@ -2,6 +2,10 @@
     display: flex;
     justify-content: flex-start;
 
+    #privacy-main::-webkit-scrollbar {
+        display: none;
+    }
+
     #privacy-main-container {
         display: flex;
         flex-direction: column;
@@ -14,30 +18,30 @@
         max-width: 1920px;
 
         > h2 {
-            color: #70e61c;
+            color: #056991;
             margin-bottom: 16px;
             // word-break: break-word;
         }
 
         > h3 {
-            color: #9206bc;
+            color: #d2300b;
         }
 
         > h4 {
-            color: #9206bc;
+            color: #d2300b;
         }
 
         > p {
             color: white;
             > a {
-                color: #70e61c;
+                color: #056991;
                 text-decoration: none;
                 font-weight: 400;
             }
         }
 
         > a {
-            color: #9206bc;
+            color: #d2300b;
             text-decoration: none;
             font-weight: 600;
         }
@@ -54,8 +58,8 @@
             cursor: pointer;
             margin-top: 32px;
             margin-bottom: 32px;
-            background-color: #9206bc;
-            border: 2px solid #9206bc;
+            background-color: #d2300b;
+            border: 2px solid #d2300b;
             // background-position: 50% 50%;
             background-size: 0% 100%;
             background-image: linear-gradient(#141d2f, #141d2f);

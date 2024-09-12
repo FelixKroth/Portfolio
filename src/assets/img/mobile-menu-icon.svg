@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 136)  -->
+  <g>
+    <g id="mobile-menu">
+      <g>
+        <rect class="cls-1" x="8.6" y="71.3" width="82.7" height="14.4" rx="1.8" ry="1.8"/>
+        <rect class="cls-1" x="8.6" y="42" width="82.7" height="14.4" rx="1.8" ry="1.8"/>
+        <rect class="cls-1" x="8.6" y="14.2" width="82.7" height="14.4" rx="1.8" ry="1.8"/>
+      </g>
+    </g>
+  </g>
+</svg>

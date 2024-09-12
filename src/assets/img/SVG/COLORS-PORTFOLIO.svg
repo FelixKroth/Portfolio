@@ -41,7 +41,7 @@
       }
 
       .cls-10 {
-        fill: #70e61c;
+        fill: #056991;
       }
 
       .cls-11 {
@@ -66,7 +66,7 @@
       <rect class="cls-11" x="235.5" y="329.4" width="162" height="162"/>
       <rect class="cls-9" x="235.5" y="543.4" width="162" height="162"/>
       <g class="cls-8">
-        <text class="cls-7" transform="translate(666.4 632.3)"><tspan x="0" y="0">#70e61c</tspan></text>
+        <text class="cls-7" transform="translate(666.4 632.3)"><tspan x="0" y="0">#056991</tspan></text>
       </g>
       <g class="cls-8">
         <text class="cls-7" transform="translate(270 418.3)"><tspan x="0" y="0">#4b47ff</tspan></text>

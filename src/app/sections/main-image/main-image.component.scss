@@ -1,6 +1,6 @@
 .header-container {
     background: url(/assets/img/HERO-BG.svg), url(/assets/img/main-image.png),
-        url(/assets/img/shadows/shadow_green_02.png);
+        url(/assets/img/shadow_main.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position:
     center top -15%,
@@ -30,10 +30,10 @@
             border-radius: 8px;
             cursor: pointer;
             margin-top: 32px;
-            background-color: #70e61c;
-            border: 2px solid #70e61c;
+            background-color: #056991;
+            border: 2px solid #056991;
             background-size: 0% 100%;
-            background-image: linear-gradient(#202b40, #202b40);
+            background-image: linear-gradient(#162032, #162032);
             background-repeat: no-repeat;
             transition:
                 background-size 0.5s,
@@ -82,7 +82,7 @@
                 > span {
                     background-color: transparent;
                     font-size: 40px;
-                    color: #9206bc;
+                    color: #d2300b;
                     margin-top: -16px;
                     text-align: left;
                 }
@@ -109,7 +109,7 @@
                 align-items: center;
                 height: 4px;
                 width: 100px;
-                background-color: #70e61c;
+                background-color: #056991;
             }
 
             > a {
@@ -119,9 +119,9 @@
                 background-color: transparent;
                 white-space: nowrap;
                 
-                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
                 &:hover {
-                    color: #70e61c;
+                    color: #056991;
                 }
             }
 
@@ -143,7 +143,7 @@
 
                     &:hover {
                         transform: scale(1.15);
-                        fill-opacity: #70e61c;
+                        fill-opacity: #056991;
                     }
                 }
             }
@@ -173,7 +173,7 @@
             animation: opacityAnimation 5s ease-out;
 
             &:hover {
-                color: #9206bc;
+                color: #d2300b;
             }
 
             > img {

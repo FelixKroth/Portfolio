@@ -4,6 +4,7 @@ import {
   Renderer2,
   OnDestroy,
   ViewChild,
+  HostListener,
 } from '@angular/core';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { TranslationService } from '../../../translation.service';
@@ -23,6 +24,7 @@ export class HeaderComponent implements OnDestroy {
   isDropdownOpen = false;
   private globalClickListener: () => void;
   private sectionToScroll: string | null = null;
+  activeSection: string | null = null; // Track the active section
 
   constructor(
     public translateService: TranslationService,
@@ -50,9 +52,30 @@ export class HeaderComponent implements OnDestroy {
       .subscribe(() => {
         if (this.sectionToScroll) {
           this.scrollToSectionOnPage(this.sectionToScroll);
-          console.log(this.sectionToScroll, 'scroll to section works');
         }
       });
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    const sections = ['about', 'skills', 'portfolio', 'contact'];
+    let activeSection = null;
+
+    for (const section of sections) {
+      const element = document.getElementById(section);
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= 0) {
+          activeSection = section;
+          break;
+        }
+      }
+    }
+    
+    // If the active section changes, update it
+    if (activeSection !== this.activeSection) {
+      this.activeSection = activeSection;
+    }
   }
 
   toggleDropdown(event?: Event) {

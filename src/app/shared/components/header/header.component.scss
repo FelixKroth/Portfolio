@@ -1,7 +1,7 @@
-.header-content {
+#header-content {
     display: flex;
     justify-content: center;
-    z-index: 999;
+    z-index: 1000;
     position: fixed;
     top: 0;
     right: 0;
@@ -22,11 +22,11 @@
                 color: white;
             }
             > span {
-                color: #70e61c;
+                color: #056991;
             }
         }
         > .menu {
-            > div {
+            > .menu-links {
                 display: flex;
                 align-items: center;
 
@@ -42,12 +42,12 @@
                     }
 
                     &:hover {
-                        color: #70e61c;
+                        color: #d2300b;
                         font-weight: 600;
                     }
 
                     &.active {
-                        color: #70e61c;
+                        color: #d2300b;
                         font-weight: 600;
                     }
                 }
@@ -55,21 +55,33 @@
                 > .separator {
                     width: 2px;
                     height: 16px;
-                    background-color: #9206bc;
+                    background-color: #056991;
                     margin: 0 8px;
                 }
 
-                > a {
+                a {
                     text-decoration: none;
                     color: white;
-                    border: none;
+                    transition: color 0.5s ease-in-out;
                     margin-left: 8px;
+                    padding-bottom: 2px;
+
+                    &:hover,
+                    &.active {
+                        color: #d2300b;
+                        background: linear-gradient( #056991 , #056991) no-repeat 0 0;
+                        background-size: 0% 10%;
+                        background-position: bottom left;
+                        animation: stripes 0.75s linear 1 forwards;
+                        cursor: pointer;
+                    }
                 }
 
-                > a:hover {
-                    color: #70e61c;
-                    cursor: pointer;
-                }
+                @keyframes stripes {
+                    to {
+                      background-size: 100% 10%;
+                    }
+                  }
             }
         }
 
@@ -81,7 +93,10 @@
                     justify-content: center;
                     align-items: center;
                     height: 48px;
-                    margin-right: -10px;
+                    margin-right: 8px;
+                }
+
+                &:hover {
                     cursor: pointer;
                 }
             }
@@ -102,18 +117,19 @@
                         background: transparent;
 
                         &:hover {
-                            color: #70e61c;
+                            color: #d2300b;
+                            cursor: pointer;
                         }
 
                         &.active {
-                            color: #9206bc;
+                            color: #d2300b;
                         }
                     }
 
                     > .separator {
                         width: 2px;
                         height: 16px;
-                        background-color: #70e61c;
+                        background-color: #056991;
                         margin: 0 8px;
                     }
                 }
@@ -123,7 +139,7 @@
                     background-color: rgba(255, 255, 255, 0.9);
                 }
 
-                > a {
+                a {
                     text-decoration: none;
                     color: #141d2f;
                     margin: 0px 0px 2px 0px;
@@ -132,12 +148,19 @@
                     padding: 16px 28px;
                     background-color: rgba(255, 255, 255, 0.75);
                     align-items: center;
-                }
-
-                > a:hover {
-                    color: #70e61c;
-                    background-color: rgba(255, 255, 255, 0.95);
-                }
+                    transition: color 0.5s ease;
+                
+                    &:hover {
+                      color: #d2300b;
+                      background-color: rgba(255, 255, 255, 0.95);
+                      cursor: pointer;
+                    }
+                
+                    &.active {
+                      color: #d2300b;
+                      font-weight: 600;
+                    }
+                  }
             }
 
             > .mobile-menu-links {

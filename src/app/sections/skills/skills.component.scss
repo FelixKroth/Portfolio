@@ -22,6 +22,7 @@
                 bottom: 10%;
                 background: transparent;
                 height: 80%;
+                filter: opacity(0.25);
             }
 
             > .skills-icons-container {
@@ -40,22 +41,15 @@
                 }
 
                 @keyframes rotateAnimation {
-                    0% {
-                        transform: rotate(0deg);
-                    }
-                    30% {
-                        transform: rotate(25deg);
-                    }
-                    60% {
-                        transform: rotate(-25deg);
-                    }
-                    100% {
-                        transform: rotate(0deg);
-                    }
+                    0% { transform: translate(0, 0) rotate(0deg); }
+                    25% { transform: translate(5px, 5px) rotate(5deg); }
+                    50% { transform: translate(0, 0) rotate(0eg); }
+                    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+                    100% { transform: translate(0, 0) rotate(0deg); }
                 }
             }
             > .skills-icons-container svg:hover {
-                animation: rotateAnimation 350ms ease-in-out;
+                animation: rotateAnimation 215ms ease-in-out infinite;
                 cursor: pointer;
             }
         }
@@ -76,7 +70,7 @@
             > .skills-line {
                 height: 4px;
                 width: 100%;
-                background-color: #70e61c;
+                background-color: #056991;
             }
             > h2 {
                 font-size: 48px;
@@ -100,8 +94,8 @@
                 border-radius: 8px;
                 cursor: pointer;
                 margin-top: 32px;
-                background-color: #70e61c;
-                border: 2px solid #70e61c;
+                background-color: #056991;
+                border: 2px solid #056991;
                 // background-position: 50% 50%;
                 background-size: 0% 100%;
                 background-image: linear-gradient(#141d2f, #141d2f);

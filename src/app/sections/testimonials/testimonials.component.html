@@ -26,16 +26,25 @@
 
     <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; background: transparent;">
       <div class="testimonial-text-content" style="display: flex; flex-direction: column; background: transparent;">
-        <h3 style="color: #70e61c; margin-bottom: 8px; background: transparent;">{{ currentTestimonial.author }}</h3>
-        <p style="background: transparent;">{{ currentTestimonial.text }}</p>
-      </div>
-      <div class="testimonial-navigation">
-        <button (click)="previousTestimonial()">&#10094;</button>
-        <button (click)="nextTestimonial()">&#10095;</button>
+        <p style="background: transparent;">{{ currentTestimonial.text }}</p><br>
+        <h3 style="color: #d2300b; margin-bottom: 8px; background: transparent;">{{ currentTestimonial.author }}</h3>
       </div>
     </div>
     <div class="testimonial-image-content">
       <img [src]="currentTestimonial.image" alt="Testimonial Image" />
     </div>
+  </div>
+
+  <div class="slider-navigation">
+    <button (click)="previousTestimonial()">&#10094;</button>
+    <div class="dots-container">
+      <span
+        *ngFor="let testimonial of testimonials; let i = index"
+        class="dot"
+        [class.active]="i === currentTestimonialIndex"
+        (click)="goToTestimonial(i)">
+      </span>
+    </div>
+    <button (click)="nextTestimonial()">&#10095;</button>
   </div>
 </section>

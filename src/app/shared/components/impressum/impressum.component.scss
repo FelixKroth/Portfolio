@@ -2,6 +2,10 @@
     display: flex;
     justify-content: flex-start;
 
+    #impressum::-webkit-scrollbar {
+        display: none;
+    }
+    
     .impressum-container {
         display: flex;
         flex-direction: column;
@@ -15,17 +19,18 @@
         background: transparent;
 
         > h2 {
-            color: #70e61c;
+            font-size: 32px;
+            color: #056991;
             margin-bottom: 16px;
             word-break: break-word;
         }
 
         > h3 {
-            color: #9206bc;
+            color: #d2300b;
         }
 
         > h4 {
-            color: #9206bc;
+            color: #d2300b;
         }
 
         p {
@@ -35,7 +40,7 @@
             }
 
             > a:hover {
-                color: #70e61c;
+                color: #056991;
             }
         }
 
@@ -47,8 +52,8 @@
             cursor: pointer;
             margin-top: 32px;
             margin-bottom: 32px;
-            background-color: #70e61c;
-            border: 2px solid #70e61c;
+            background-color: #056991;
+            border: 2px solid #056991;
             // background-position: 50% 50%;
             background-size: 0% 100%;
             background-image: linear-gradient(#141d2f, #141d2f);
